@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="Cupcoffeelogin">
+<head>
+    <meta charset="UTF-8">
+    <title>Cupcoffe Login</title>
+    <script src="sources/angular.min.js"></script>
+    <link rel="stylesheet" href="loginstyle.css">
+    <script language="javascript" type="text/javascript" src="logincontrol.js"></script>
+</head>
+<body>
+<div ng-controller="logincontroller">
+    <li ng-repeat="article in articles" ng-class="{'even':$even,'odd':$odd}" >
+        <span>{{article.id}}  {{article.name}}  {{article.price}}</span>
+    </li>
+    <button ng-click="kekalert()" ng-init="ausgabe='test'"> {{ausgabe}}</button>
+</div>
+
+</body>
+</html>
