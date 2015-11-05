@@ -8,7 +8,10 @@
     <script language="javascript" type="text/javascript" src="scripts/logincontrol.js"></script>
 </head>
 <body>
-<div ng-controller="logincontroller">
+<div ng-controller="logincontroller" nt-init="showregflak='false'">
+    //ng-hide und ng-show arbeiten wie ein kippschalter;
+    //bei hide=false wird es angezeigt und bei show=false versteckt
+    <div ng-hide="showregflak">
     <span>CupCoffee Login</span></br>
     </br>
     <span>Nutzername</span> </br>
@@ -17,7 +20,24 @@
     <input type="password" ng-model="userpassword"></br></br>
 
     <button type="button" ng-click="submit(username,userpassword)">Login</button>
-    <button type="button" ng-click="register()">register</button>
+    <button type="button" ng-click="showregflak='true'">register</button>
+
+    </div>
+    <div ng-show="showregflak">
+        <span>CupCoffee registration</span>
+        </br>
+        </br>
+        <span>Nutzername</span> </br>
+        <input type="text" ng-model="createuser"> </br>
+        <span>Passwort</span></br>
+        <input type="password" ng-model="createpassword">
+        </br>
+        <input type="password" ng-model="controlcreatepassword">
+        </br>
+        </br>
+        <button type="button" ng-click="register()">Create User</button>
+
+    </div>
 </div>
 
 
