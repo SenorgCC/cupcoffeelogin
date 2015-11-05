@@ -9,11 +9,17 @@
 </head>
 <body>
 <div ng-controller="logincontroller">
-    <li ng-repeat="article in articles" ng-class="{'even':$even,'odd':$odd}" >
-        <span>{{article.id}}  {{article.name}}  {{article.price}}</span>
-    </li>
-    <button ng-click="kekalert()" ng-init="ausgabe='test'"> {{ausgabe}}</button>
+    <span>CupCoffee Login</span></br>
+    </br>
+    <span>Nutzername</span> </br>
+    <input type="text" ng-model="username"> </br>
+    <span>Passwort</span></br>
+    <input type="password" ng-model="userpassword"></br></br>
+
+    <button type="button" ng-click="submit()">Login</button>
+    <button type="button" ng-click="register()">register</button>
 </div>
+
 
 </body>
 </html>
