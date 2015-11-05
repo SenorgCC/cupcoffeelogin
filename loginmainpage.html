@@ -5,7 +5,7 @@
     <title>Cupcoffe Login</title>
     <script src="sources/angular.min.js"></script>
     <link rel="stylesheet" href="loginstyle.css">
-    <script language="javascript" type="text/javascript" src="logincontrol.js"></script>
+    <script language="javascript" type="text/javascript" src="scripts/logincontrol.js"></script>
 </head>
 <body>
 <div ng-controller="logincontroller">
@@ -16,7 +16,7 @@
     <span>Passwort</span></br>
     <input type="password" ng-model="userpassword"></br></br>
 
-    <button type="button" ng-click="submit()">Login</button>
+    <button type="button" ng-click="submit(username,userpassword)">Login</button>
     <button type="button" ng-click="register()">register</button>
 </div>
 
