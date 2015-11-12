@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="loginstyle.css">
     <script language="javascript" type="text/javascript" src="scripts/logincontrol.js"></script>
 </head>
-<body>
-<div ng-controller="logincontroller" nt-init="showregflak='false'">
-    //ng-hide und ng-show arbeiten wie ein kippschalter;
-    //bei hide=false wird es angezeigt und bei show=false versteckt
+<body >
+<div ng-controller="logincontroller" nt-init="showregflak='false'" ng-view="loginvie">
+    <!--ng-hide und ng-show arbeiten wie ein kippschalter;
+    //bei hide=false wird es angezeigt und bei show=false versteckt-->
     <div ng-hide="showregflak">
     <span>CupCoffee Login</span></br>
     </br>
@@ -36,7 +36,6 @@
         </br>
         </br>
         <button type="button" ng-click="register()">Create User</button>
-
     </div>
 </div>
 

@@ -2,7 +2,7 @@
  * Created by Alex on 03.11.2015.
  */
 var app = angular.module('Cupcoffeelogin', [])
-    .controller('logincontroller', function($scope){
+    .controller('logincontroller', function($scope,$http){
 
         $scope.submit=function(username, userpassword) {
             //loginflag
@@ -14,6 +14,16 @@ var app = angular.module('Cupcoffeelogin', [])
                 {id: 1, name: "admin", passwort: "admin"},
                 {id: 2, name: "test2", passwort: "ke22k"}
             ];
+
+            $http({
+                method: 'GET',
+                url: 'firsttrylogin.php'
+            }).then(function successCallback(response) {
+                $usernamedata=response.data;
+                alert(JSON.stringify($usernamedata));
+            }, function errorCallback(response) {
+                alert("alert")
+            });
 
             //suchenachkorrekten eingaben
             for (var i = 0; i <= $scope.accounts.length; i++) {
@@ -41,5 +51,6 @@ app.controller('registercontroller',function($scope){
 
 
 });
+
 
 
