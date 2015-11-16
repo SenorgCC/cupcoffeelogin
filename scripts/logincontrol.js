@@ -4,18 +4,19 @@
 var app = angular.module('Cupcoffeelogin', [])
     .controller('logincontroller', function($scope,$http){
 
-        $scope.submit=function($username, $userpassword) {
-            //loginflag
-            var logintest = false;
+        $scope.submit=function(username, userpassword) {
+            //loginflag vorerst zum test ausfrühren, extremer pfusch!
+            var correctloginflag = false;
 
             //databasedummy
-            /*
+            //NUR FÜR DEN HALLO WORLD TEST NUTZTEN !
+
              $scope.accounts = [
              {id: 0, name: "test", passwort: "kek"},
              {id: 1, name: "admin", passwort: "admin"},
              {id: 2, name: "test2", passwort: "ke22k"}
              ];
-             */
+
             /* ERSTE Umsetzung mit Angular
              $http({
              method: 'GET',
@@ -34,7 +35,7 @@ var app = angular.module('Cupcoffeelogin', [])
              */
             //JQuery Kommunikation durch PHP mit der mysql db.
             //PHP-Datei enthällt die function logincheck, die true oder false zurück gibt
-
+            /*
             alert("username:"+$username+" userpassword:"+$userpassword);
             $.ajax({
                 type:"GET",
@@ -53,22 +54,26 @@ var app = angular.module('Cupcoffeelogin', [])
 
                 }
             });
+            */
             //suchenachkorrekten eingaben
-            for (var i = 0; i <= $scope.accounts.length; i++) {
+            for (var i = 0; i <= $scope.accounts.length-1; i++) {
                 if ($scope.accounts[i].name == username) {
                     if ($scope.accounts[i].passwort == userpassword) {
-                        alert("WILLKOMMEN!");
-                        //Hierhinkommt die weiterleitung
+                        correctloginflag=true;
                         //keine weitere durchsuchung der schleife nötig, da einmalige nutzter
-                        break;
-                    }else{
-                        alert("FALSCHER INPUT!");
-                        //eingaben werden gecleart
-                        $scope.username='';
-                        $scope.userpassword='';
                         break;
                     }
                 }
+            }
+            if(correctloginflag == true){
+                alert("WILLKOMMEN!");
+                //Hierhinkommt die weiterleitung
+            }else{
+                alert("Falscher Login!");
+                //die inputfelder sollen wieder leer angezeigt werden
+                $scope.username='';
+                $scope.userpassword='';
+
             }
         };
         $scope.register=function(){

@@ -6,15 +6,31 @@
     <script src="sources/angular.min.js"></script>
    <script src="sources/jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="sources/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link href="signin.css" rel="stylesheet">
     <script language="javascript" type="text/javascript" src="scripts/logincontrol.js"></script>
 </head>
 <body >
-<div ng-controller="logincontroller" nt-init="showregflak='false'" ng-view="loginvie">
+
+<div class="container" ng-controller="logincontroller" nt-init="showregflak='false'" ng-view="loginvie">
     <!--ng-hide und ng-show arbeiten wie ein kippschalter;
-    //bei hide=false wird es angezeigt und bei show=false versteckt-->
+        //bei hide=false wird es angezeigt und bei show=false versteckt-->
+    <form class="form-signin">
+        <h2 class="form-signin-heading">CupCoffee Login</h2>
+        <label class="sr-only">Name</label>
+        <input type="name" id="inputEmail" class="form-control" placeholder="Name" ng-model="username" autofocus>
+        <label for="inputPassword" class="sr-only" >Password</label>
+        <input type="password" id="inputPassword" class="form-control" ng-model="userpassword" placeholder="Password">
+        <button class="btn btn-lg btn-primary btn-block" type="submit"  ng-click="submit(username,userpassword)" >Sign in</button>
+    </form>
+
+</div>
+<!--
+<div ng-controller="logincontroller" nt-init="showregflak='false'" ng-view="loginvie">
+
     <div ng-hide="showregflak">
-    <span>CupCoffee Login</span></br>
-    </br>
+
+
     <span>Nutzername</span> </br>
     <input type="text" ng-model="username"> </br>
     <span>Passwort</span></br>
@@ -40,6 +56,6 @@
     </div>
 </div>
 
-
+-->
 </body>
 </html>
