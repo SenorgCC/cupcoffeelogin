@@ -81,6 +81,7 @@ var app = angular.module('Cupcoffeelogin', [])
         };
     });
 app.controller('registercontroller',function($scope){
+    //registrierung kommt hierhin
 
 
 });
