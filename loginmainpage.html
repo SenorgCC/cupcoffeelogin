@@ -15,13 +15,13 @@
 <div ng-view="homepageview" class="container" ng-controller="logincontroller" nt-init="showregflak='false'" ng-view="loginvie">
   <!-- loginAlertWarning = Falscherlogin -->
     <div id="loginAlertwarning" class="alert alert-danger " role="alert">
-       <button type="button" class="close" da ta-dismiss="alert" aria-label="Close" id="worngAlarmLoginBtn">x</button>
-        Falscher Login!
+       <button type="button" class="close" aria-label="Close" id="worngAlarmLoginBtn">x</button>
+        <label id="loginAlertmsg">Falscher Login!</label>
     </div>
     <!-- loginAlertwelcome = Richtige Daten -->
     <div id="loginAlertwelcome" class="alert alert-success" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="welcomeAlarmBtn">x</button>
-        Willkommen!
+        <button type="button" class="close" aria-label="Close" id="welcomeAlarmBtn">x</button>
+        <label id="loginWelcomemsg">Willkommen!</label>
     </div>
     <form class="form-signin">
         <h2 class="form-signin-heading">CupCoffee Login</h2>
