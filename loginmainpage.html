@@ -18,10 +18,10 @@
     <form class="form-signin">
         <h2 class="form-signin-heading">CupCoffee Login</h2>
         <label class="sr-only">Name</label>
-        <input type="name" id="inputEmail" class="form-control" placeholder="Name" ng-model="username" autofocus>
+        <input type="name" id="inputname" class="form-control" placeholder="Name" ng-model="username" autofocus>
         <label for="inputPassword" class="sr-only" >Password</label>
         <input type="password" id="inputPassword" class="form-control" ng-model="userpassword" placeholder="Password">
-        <button class="btn btn-lg btn-primary btn-block" type="submit"  ng-click="submit(username,userpassword)" >Sign in</button>
+        <button id="submitbtn"class="btn btn-lg btn-primary btn-block" type="submit"  ng-click="submit(username,userpassword)" >Sign in</button>
     </form>
 
 </div>
