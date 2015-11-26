@@ -56,16 +56,9 @@
           <file leaf-file-name="firsttrylogin.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/firsttrylogin.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.42546245">
-                  <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-                  <folding>
-                    <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
-                    <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
-                    <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
-                    <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
-                    <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
-                    <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
-                  </folding>
+                <state vertical-scroll-proportion="0.4069641">
+                  <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -73,8 +66,18 @@
           <file leaf-file-name="mainpage.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/mainpage.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
+                <state vertical-scroll-proportion="-6.076923">
                   <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="useroptions.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/useroptions.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-11.961538">
+                  <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -87,8 +90,8 @@
           <file leaf-file-name="logincontrol.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7040261">
-                  <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
+                <state vertical-scroll-proportion="0.3297062">
+                  <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -111,6 +114,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/loginmainpage.html" />
+        <option value="$PROJECT_DIR$/useroptions.html" />
         <option value="$PROJECT_DIR$/scripts/logincontrol.js" />
         <option value="$PROJECT_DIR$/firsttrylogin.php" />
       </list>
@@ -238,7 +242,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="852" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files (x86)\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -263,9 +267,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/adminview-kosten.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/adminview-rechnung.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/adminview-warteschlange.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/useroptions.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -273,7 +275,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/adminview.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -433,7 +434,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448542142576</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : noch nicht">
+      <created>1448548427717</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1448548427717</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -445,6 +452,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14479166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273495" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -454,7 +462,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -484,7 +491,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jquery and php combination for db communication" />
-    <option name="LAST_COMMIT_MESSAGE" value="jquery and php combination for db communication" />
+    <MESSAGE value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : noch nicht" />
+    <option name="LAST_COMMIT_MESSAGE" value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : noch nicht" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -495,21 +503,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/firsttrylogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -542,14 +535,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -585,14 +571,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -944,34 +923,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainpage.html">
+    <entry file="file://$PROJECT_DIR$/useroptions.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        <state vertical-scroll-proportion="-11.961538">
+          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
+    <entry file="file://$PROJECT_DIR$/mainpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7040261">
-          <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
+        <state vertical-scroll-proportion="-6.076923">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firsttrylogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42546245">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
-          </folding>
+        <state vertical-scroll-proportion="0.4069641">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3297062">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

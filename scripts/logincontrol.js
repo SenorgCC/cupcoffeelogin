@@ -52,17 +52,22 @@ var app = angular.module('Cupcoffeelogin', [])
                 */
 
                 var result =$.ajax({
-                    type:'POST',
+                    type:'GET',
                     url:'firsttrylogin.php',
-
-                    data:({username:"admin ", userpassword: "kek "}),
+                    datatype:'json',
+                    contenttype: 'application/json',
+                    data:({username:"admin ", userpassword: "topkek123 "}),
                     async:false,
                     success: function(data){
+                        alert("ERFOLG");
 
-                        alert("erfolg");
+                        $scope.daten= data;
+
                     }
                 });
-                alert(JSON.stringify(result));
+
+                alert(JSON.stringify($scope.daten));
+
 
 
 
