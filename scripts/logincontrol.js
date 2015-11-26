@@ -62,7 +62,6 @@ var app = angular.module('Cupcoffeelogin', [])
                         alert("ERFOLG");
 
                         $scope.daten= data;
-
                     }
                 });
 

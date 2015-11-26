@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea1a2c4c-2835-41f7-86c9-9fd755c90696" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firsttrylogin.php" afterPath="$PROJECT_DIR$/firsttrylogin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/logincontrol.js" afterPath="$PROJECT_DIR$/scripts/logincontrol.js" />
     </list>
     <ignored path="cupcoffeeloginUML.iws" />
@@ -56,8 +55,8 @@
           <file leaf-file-name="firsttrylogin.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/firsttrylogin.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4069641">
-                  <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+                <state vertical-scroll-proportion="0.66594124">
+                  <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -90,8 +89,8 @@
           <file leaf-file-name="logincontrol.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3297062">
-                  <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+                <state vertical-scroll-proportion="0.77366704">
+                  <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -115,8 +114,8 @@
       <list>
         <option value="$PROJECT_DIR$/loginmainpage.html" />
         <option value="$PROJECT_DIR$/useroptions.html" />
-        <option value="$PROJECT_DIR$/scripts/logincontrol.js" />
         <option value="$PROJECT_DIR$/firsttrylogin.php" />
+        <option value="$PROJECT_DIR$/scripts/logincontrol.js" />
       </list>
     </option>
   </component>
@@ -440,7 +439,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448548427717</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : escape sequences für &quot; müssen noch weg">
+      <created>1448556649498</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1448556649498</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -492,7 +497,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="jquery and php combination for db communication" />
     <MESSAGE value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : noch nicht" />
-    <option name="LAST_COMMIT_MESSAGE" value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : noch nicht" />
+    <MESSAGE value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : escape sequences für &quot; müssen noch weg" />
+    <option name="LAST_COMMIT_MESSAGE" value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : escape sequences für &quot; müssen noch weg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -941,16 +947,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/firsttrylogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4069641">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.66594124">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3297062">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.77366704">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
           <folding />
         </state>
       </provider>
