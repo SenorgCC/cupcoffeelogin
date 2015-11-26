@@ -32,7 +32,7 @@
 
 
         }
-        $jsonstring= json_encode($json, JSON_UNESCAPED_SLASHES);
+        $jsonstring= json_encode(array_values($json));
         echo $jsonstring;
         mysqli_close($con);
 
