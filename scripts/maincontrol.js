@@ -1,0 +1,10 @@
+/**
+ * Created by alex on 26.11.2015.
+ */
+
+var app= angular.module('CupCoffeeMainpage', []);
+
+app.controller('mainpagecontroller', function($scope){
+    //FUNKTIONEN LOGIK!
+});
+
