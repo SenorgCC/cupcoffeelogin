@@ -53,7 +53,9 @@ var app = angular.module('Cupcoffeelogin', [])
                 if(correctloginflag == true){
                     $('#loginAlertwelcome').fadeIn('slow',function(){
                         $(this).delay(800).fadeOut('slow');
+                        window.sessionStorage("Username",usrname);
                         $window.location.href= ('mainpage.html');
+
                     });
 
 

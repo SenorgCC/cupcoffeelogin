@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea1a2c4c-2835-41f7-86c9-9fd755c90696" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/maincontrol.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainpage.html" afterPath="$PROJECT_DIR$/mainpage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/logincontrol.js" afterPath="$PROJECT_DIR$/scripts/logincontrol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/maincontrol.js" afterPath="$PROJECT_DIR$/scripts/maincontrol.js" />
     </list>
     <ignored path="cupcoffeeloginUML.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,14 +26,14 @@
     <favorites_list name="cupcoffeeloginUML" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3410475">
+    <splitter split-orientation="horizontal" split-proportion="0.37637028">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="loginmainpage.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/loginmainpage.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.9230769">
-                  <caret line="6" column="55" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="55" />
+                <state vertical-scroll-proportion="4.230769">
+                  <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -52,8 +52,8 @@
           <file leaf-file-name="mainpage.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/mainpage.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.22844344">
-                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.2094065">
+                  <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -62,38 +62,30 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.5">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file leaf-file-name="logincontrol.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.12948857">
-                      <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="maincontrol.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/scripts/maincontrol.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state vertical-scroll-proportion="0.036996737">
-                      <caret line="4" column="42" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="42" />
-                      <folding>
-                        <element signature="e#0#41#0" expanded="false" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="logincontrol.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="maincontrol.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/scripts/maincontrol.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.22198041">
+                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-second>
     </splitter>
   </component>
@@ -120,11 +112,11 @@
         <option value="$PROJECT_DIR$/useroptions.html" />
         <option value="$PROJECT_DIR$/firsttrylogin.php" />
         <option value="$PROJECT_DIR$/register.html" />
+        <option value="$PROJECT_DIR$/scripts/maincontrol.js.ts" />
+        <option value="$PROJECT_DIR$/mainpage.html" />
         <option value="$PROJECT_DIR$/loginmainpage.html" />
         <option value="$PROJECT_DIR$/scripts/logincontrol.js" />
-        <option value="$PROJECT_DIR$/scripts/maincontrol.js.ts" />
         <option value="$PROJECT_DIR$/scripts/maincontrol.js" />
-        <option value="$PROJECT_DIR$/mainpage.html" />
       </list>
     </option>
   </component>
@@ -489,7 +481,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448564298457</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="angular anpassung mainpage">
+      <created>1448564695500</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1448564695500</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -544,7 +542,8 @@
     <MESSAGE value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : escape sequences für &quot; müssen noch weg" />
     <MESSAGE value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : funktioniert!" />
     <MESSAGE value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : funktioniert!&#10;alles kommentiert" />
-    <option name="LAST_COMMIT_MESSAGE" value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : funktioniert!&#10;alles kommentiert" />
+    <MESSAGE value="angular anpassung mainpage" />
+    <option name="LAST_COMMIT_MESSAGE" value="angular anpassung mainpage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -911,14 +910,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12948857">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/useroptions.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.884615">
@@ -935,16 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/maincontrol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036996737">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firsttrylogin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -955,17 +936,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/loginmainpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="55" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="55" />
+        <state vertical-scroll-proportion="4.230769">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mainpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22844344">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.2094065">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/maincontrol.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22198041">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

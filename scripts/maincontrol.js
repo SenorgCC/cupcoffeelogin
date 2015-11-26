@@ -5,6 +5,10 @@
 var app= angular.module('CupCoffeeMainpage', []);
 
 app.controller('mainpagecontroller', function($scope){
+
+    $scope.username=windows.sessionStorage.getItem("Username");
+
+    alert($scope.username);
     //FUNKTIONEN LOGIK!
 });
 
