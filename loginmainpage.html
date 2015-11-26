@@ -11,26 +11,45 @@
 </head>
 <body >
 
-<div ng-view="homepageview" class="container" ng-controller="logincontroller" nt-init="showregflak='false'" ng-view="loginvie">
-  <!-- loginAlertWarning = Falscherlogin -->
-    <div id="loginAlertwarning" class="alert alert-danger " role="alert">
-       <button type="button" class="close" aria-label="Close" id="worngAlarmLoginBtn">x</button>
-        <label id="loginAlertmsg">Falscher Login!</label>
+<div ng-init="init()" ng-controller="loginmaincontroller">
+    <div ng-view="homepageview" class="container" ng-controller="authenticationctrl" ng-show='showloginflag'>
+      <!-- loginAlertWarning = Falscherlogin -->
+        <div id="loginAlertwarning" class="alert alert-danger " role="alert">
+           <button type="button" class="close" aria-label="Close" id="worngAlarmLoginBtn">x</button>
+            <label id="loginAlertmsg">Falscher Login!</label>
+        </div>
+        <!-- loginAlertwelcome = Richtige Daten -->
+        <div id="loginAlertwelcome" class="alert alert-success" role="alert">
+            <button type="button" class="close" aria-label="Close" id="welcomeAlarmBtn">x</button>
+            <label id="loginWelcomemsg">Willkommen!</label>
+        </div>
+        <form class="form-signin">
+            <h2 class="form-signin-heading">CupCoffee Login</h2>
+            <label class="sr-only">Name</label>
+            <input type="name" id="inputname" class="form-control" placeholder="Name" ng-model="username" autofocus>
+            <label for="inputPassword" class="sr-only" >Password</label>
+            <input type="password" id="inputPassword" class="form-control" ng-model="userpassword" placeholder="Password">
+            <button id="submitbtn"class="btn btn-lg btn-primary btn-block" type="submit"  ng-click="submit(username,userpassword)" >Sign in</button>
+            <button id="registerbtn"class="btn btn-lg btn-primary btn-block" type="submit"  ng-click="showregister()" > Register</button>
+        </form>
     </div>
-    <!-- loginAlertwelcome = Richtige Daten -->
-    <div id="loginAlertwelcome" class="alert alert-success" role="alert">
-        <button type="button" class="close" aria-label="Close" id="welcomeAlarmBtn">x</button>
-        <label id="loginWelcomemsg">Willkommen!</label>
-    </div>
-    <form class="form-signin">
-        <h2 class="form-signin-heading">CupCoffee Login</h2>
-        <label class="sr-only">Name</label>
-        <input type="name" id="inputname" class="form-control" placeholder="Name" ng-model="username" autofocus>
-        <label for="inputPassword" class="sr-only" >Password</label>
-        <input type="password" id="inputPassword" class="form-control" ng-model="userpassword" placeholder="Password">
-        <button id="submitbtn"class="btn btn-lg btn-primary btn-block" type="submit"  ng-click="submit(username,userpassword)" >Sign in</button>
-    </form>
-</div>
 
+    <div ng-view="homepageregisterview" class="container" ng-controller="registercontroller"  ng-show="showregflag">
+        <form class="form-signin"><!--bla-->
+
+            <div>
+
+                <div> Benutzernamen eintragen<input type="text" class="form-control" aria-label="..."></div>
+
+            </div>
+
+            <div class="input-group">
+                <div> Passwort eintragen<input type="password" class="form-control" aria-label="..."></div>
+                <div>Passwort wiederholen<input type="password" class="form-control" aria-label="..."></div>
+                <button class="btn btn-lg btn-success btn-block" type="submit">Registrieren und anmelden</button>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>

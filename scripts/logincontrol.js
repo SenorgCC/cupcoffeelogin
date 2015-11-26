@@ -2,7 +2,7 @@
  * Created by Alex on 03.11.2015.
  */
 var app = angular.module('Cupcoffeelogin', [])
-    .controller('logincontroller', function($scope,$http){
+    .controller('authenticationctrl', function($scope,$http,$window){
 
         $(document).ready(function() {
             $('#loginAlertwarning').hide();
@@ -39,10 +39,6 @@ var app = angular.module('Cupcoffeelogin', [])
                     }
                 });
 
-
-
-
-
                 //suchenachkorrekten eingaben
                 for (var i = 0; i <= $scope.accounts.length-1; i++) {
                     if ($scope.accounts[i].name == usrname) {
@@ -55,8 +51,12 @@ var app = angular.module('Cupcoffeelogin', [])
                 }
 
                 if(correctloginflag == true){
-                    $('#loginAlertwelcome').fadeIn();
-                    //Hierhinkommt die weiterleitung
+                    $('#loginAlertwelcome').fadeIn('slow',function(){
+                        $(this).delay(800).fadeOut('slow');
+                        $window.location.href= ('mainpage.html');
+                    });
+
+
                 }else{
                     $('#loginAlertwarning').fadeIn();
                     //die inputfelder sollen wieder leer angezeigt werden
@@ -73,6 +73,16 @@ app.controller('registercontroller',function($scope){
     //registrierung kommt hierhin
 
 
+});
+app.controller('loginmaincontroller', function($scope){
+   $scope.init=function(){
+       $scope.showloginflag=true;
+       $scope.showregflag=false;
+   }
+    $scope.showregister=function(){
+        $scope.showregflag=!$scope.showregflag;
+        $scope.showloginflag=!$scope.showloginflag;
+    }
 });
 
 
