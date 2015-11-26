@@ -18,54 +18,26 @@ var app = angular.module('Cupcoffeelogin', [])
             $scope.submit=function(usrname, usrpassword) {
                 //loginflag vorerst zum test ausfrühren, extremer pfusch!
                 var correctloginflag = false;
-                //databasedummy
-                //NUR FÜR DEN HALLO WORLD TEST NUTZTEN !
-
-                 $scope.accounts = [
-                 {id: 0, name: "test", passwort: "kek"},
-                 {id: 1, name: "admin", passwort: "admin"},
-                 {id: 2, name: "test2", passwort: "ke22k"}
-                 ];
-
 
                 //JQuery Kommunikation durch PHP mit der mysql db.
                 //PHP-Datei enthällt die function logincheck, die true oder false zurück gibt
 
 
 
-                /*
-                var result =$.ajax({
-                                type:'POST',
-                                url:'firsttrylogin.php',
-                                param:'{}',
-                                data:{username:"admin"},
-                                contentType:"application/json; charset=utf-8",
-                                dataType: 'json',
-                                async:false,
-                                success: function(data){
-
-                                    alert("erfolg");
-                                  }
-                             });
-                alert(JSON.stringify(result));
-
-                */
-
+                //AJAX Aufruf mittels JQuery
                 var result =$.ajax({
                     type:'GET',
                     url:'firsttrylogin.php',
                     datatype:'json',
                     contenttype: 'application/json',
-                    data:({username:"admin ", userpassword: "topkek123 "}),
                     async:false,
                     success: function(data){
-                        alert("ERFOLG");
 
-                        $scope.daten= JSON.parse(data);
+                        //JSON.parse wird benötigt, damit die zurückgegebenen Daten im Objekt Array
+                        //Format erstellt werden
+                        $scope.accounts= JSON.parse(data);
                     }
                 });
-
-                alert(JSON.stringify($scope.daten));
 
 
 
