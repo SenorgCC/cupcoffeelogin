@@ -4,18 +4,18 @@
 var app = angular.module('Cupcoffeelogin', [])
     .controller('logincontroller', function($scope,$http){
 
-        $(document).ready(function(){
+        $(document).ready(function() {
             $('#loginAlertwarning').hide();
             $('#loginAlertwelcome').hide();
-            $('#worngAlarmLoginBtn').click( function () {
-               $('#loginAlertwarning').fadeOut();
+            $('#worngAlarmLoginBtn').click(function () {
+                $('#loginAlertwarning').fadeOut();
             });
-            $('#welcomeAlarmBtn').click(function(){
-               $('#loginAlertwelcome').fadeOut();
+            $('#welcomeAlarmBtn').click(function () {
+                $('#loginAlertwelcome').fadeOut();
             });
 
 
-            $scope.submit=function(username, userpassword) {
+            $scope.submit=function(usrname, usrpassword) {
                 //loginflag vorerst zum test ausfrühren, extremer pfusch!
                 var correctloginflag = false;
                 //databasedummy
@@ -32,11 +32,13 @@ var app = angular.module('Cupcoffeelogin', [])
                 //PHP-Datei enthällt die function logincheck, die true oder false zurück gibt
 
 
+
+                /*
                 var result =$.ajax({
-                                type:"GET",
+                                type:'POST',
                                 url:'firsttrylogin.php',
                                 param:'{}',
-                                data:"{}",
+                                data:{username:"admin"},
                                 contentType:"application/json; charset=utf-8",
                                 dataType: 'json',
                                 async:false,
@@ -47,14 +49,28 @@ var app = angular.module('Cupcoffeelogin', [])
                              });
                 alert(JSON.stringify(result));
 
+                */
+
+                var result =$.ajax({
+                    type:'POST',
+                    url:'firsttrylogin.php',
+
+                    data:({username:"admin ", userpassword: "kek "}),
+                    async:false,
+                    success: function(data){
+
+                        alert("erfolg");
+                    }
+                });
+                alert(JSON.stringify(result));
 
 
 
 
                 //suchenachkorrekten eingaben
                 for (var i = 0; i <= $scope.accounts.length-1; i++) {
-                    if ($scope.accounts[i].name == username) {
-                        if ($scope.accounts[i].passwort == userpassword) {
+                    if ($scope.accounts[i].name == usrname) {
+                        if ($scope.accounts[i].passwort == usrpassword) {
                             correctloginflag=true;
                             //keine weitere durchsuchung der schleife nötig, da einmalige nutzter
                             break;
