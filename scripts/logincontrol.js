@@ -73,17 +73,20 @@ app.controller('registercontroller',function($scope){
         $scope.register=function(usrname, usrpassword){
             //öffnet ein neues fenster zum registrieren des nutzters
 
+            alert(usrname+ " "+usrpassword);
+
             $.ajax({
                 type:'POST',
-                url:'firsttrylogin.php',
+                url:'register.php',
                 datatype:'json',
+                data:{username:usrname,userpassword:usrpassword},
                 contenttype: 'application/json',
                 async:false,
                 success: function(data){
 
-                    //JSON.parse wird benötigt, damit die zurückgegebenen Daten im Objekt Array
-                    //Format erstellt werden
-                    $scope.accounts= JSON.parse(data);
+                    alert(JSON.stringify(data));
+
+
                 }
             });
 

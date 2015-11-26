@@ -39,14 +39,14 @@
 
             <div>
 
-                <div> Benutzernamen eintragen<input type="text" class="form-control" aria-label="..."></div>
+                <div> Benutzernamen eintragen<input ng-model="userregname"type="text" class="form-control" aria-label="..."></div>
 
             </div>
 
             <div class="input-group">
-                <div> Passwort eintragen<input type="password" class="form-control" aria-label="..."></div>
+                <div> Passwort eintragen<input ng-model="userregpassword" type="password" class="form-control" aria-label="..."></div>
                 <div>Passwort wiederholen<input type="password" class="form-control" aria-label="..."></div>
-                <button class="btn btn-lg btn-success btn-block" type="submit">Registrieren und anmelden</button>
+                <button class="btn btn-lg btn-success btn-block" type="submit" ng-click="register(userregname,userregpassword)">Registrieren</button>
             </div>
         </form>
     </div>
