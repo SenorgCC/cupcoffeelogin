@@ -53,12 +53,10 @@ var app = angular.module('Cupcoffeelogin', [])
                 if(correctloginflag == true){
                     $('#loginAlertwelcome').fadeIn('slow',function(){
                         $(this).delay(800).fadeOut('slow');
-                        window.sessionStorage("Username",usrname);
+                        window.sessionStorage.setItem("Username",usrname);
                         $window.location.href= ('mainpage.html');
 
                     });
-
-
                 }else{
                     $('#loginAlertwarning').fadeIn();
                     //die inputfelder sollen wieder leer angezeigt werden
@@ -66,13 +64,32 @@ var app = angular.module('Cupcoffeelogin', [])
                     $scope.userpassword='';
                 }
             };
-            $scope.register=function(){
-            //öffnet ein neues fenster zum registrieren des nutzters
-        };
         });
     });
 app.controller('registercontroller',function($scope){
-    //registrierung kommt hierhin
+
+    $(document).ready(function(){
+
+        $scope.register=function(usrname, usrpassword){
+            //öffnet ein neues fenster zum registrieren des nutzters
+
+            $.ajax({
+                type:'POST',
+                url:'firsttrylogin.php',
+                datatype:'json',
+                contenttype: 'application/json',
+                async:false,
+                success: function(data){
+
+                    //JSON.parse wird benötigt, damit die zurückgegebenen Daten im Objekt Array
+                    //Format erstellt werden
+                    $scope.accounts= JSON.parse(data);
+                }
+            });
+
+        };
+
+    });
 
 
 });
