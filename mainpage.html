@@ -12,7 +12,7 @@
 <body>
 
 <nav class="navbar navbar-default">
-    <div class="container-fluid">
+    <div class="container-fluid" ng-controller="mainpagecontroller">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -37,7 +37,7 @@
 <div align="center"><h1>Übersicht</h1></div>
 
 
-
+<div ng-controller="mainpagecontroller">
 <form class="form-signin">
 <div  class="panel panel-primary">
     <div align="center" class="panel-heading panel-primary">Voraussetzungen</div>
@@ -56,6 +56,6 @@
 <form class="form-signin">
 <button id="orderbtn" class="btn btn-lg btn-success btn-block" type="submit"><span class=" glyphicon glyphicon-euro" aria-hidden="true"></span> Kostenpflichtig bestellen</button>
 </form>
-
+</div>
 </body>
 </html>
