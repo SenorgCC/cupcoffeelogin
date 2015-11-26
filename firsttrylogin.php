@@ -1,26 +1,23 @@
 <?php
-function login($loginusername, $loginuserpassword){
-    $hostname = "localhost";
-    $username = "root";
-    $password = "";
+
+    $host = "localhost:3306";
+    $user = "root";
+    $pass= "";
+    $databasename="cupcoffedb";
+    $tableName= "logindata";
 
 //connection to the database
-$dbhandle = mysql_connect($hostname, $username, $password)
- or die("Unable to connect to MySQL");
+include 'DB.php';
+$con = mysql_connect($host, $user, $pass);
+$dbs = mysql_select($databasename, $con);
+
+//Query Data from Database
+
+$result= mysql_query("Select * From $tableName);
+$array = mysql_fetch_row($result);
+
+//echo
+echo json_encode($array);
 
 
-//select a database to work with
-    $selected = mysql_select_db("cupcoffedb")
-        or die("Could not select examples");
-
-    //execute the SQL query and return records
-    $result = mysql_query("SELECT Name, Password FROM logindata where Name='$loginusername'");
-
-    //fetch tha data from the database
-    while ($row = mysql_fetch_array($result)) {
-        echo "ID:".$row{'ID'}." Name:".$row{'Name'};
-    }
-    //close the connection
-    mysql_close($dbhandle);
-}
 ?>
