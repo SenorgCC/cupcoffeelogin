@@ -2,7 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Mainpage</title>
+    <title>Adminview - Warteschlange</title>
+    <script src="sources/angular.min.js"></script>
+    <script src="sources/jquery-2.1.4.min.js"></script>
     <link href="signin.css" rel="stylesheet">
     <link rel="stylesheet" href="sources/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 </head>
@@ -22,8 +24,14 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!-- linker Teil der navbar realisierbar mit einer unordered list-->
-            <ul class="nav navbar-nav navbar-right"><!-- rechter Teil der navbar-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- linker Teil der navbar-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Kosten einstellen <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Rechnung erstellen</a></li>
+                <li><a href="#">Warteschlange administrieren</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right"> <!-- rechter Teil der navbar-->
                 <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Passwort ändern</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>Abmelden</a></li>
             </ul>
@@ -31,27 +39,13 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-<div align="center"><h1>Übersicht</h1></div>
 
-
-
-<form class="form-signin">
-<div  class="panel panel-primary">
-    <div align="center" class="panel-heading panel-primary">Voraussetzungen</div>
-    <div class="panel-body">
-    Tasse untergestellt? <span class="label label-danger">Bitte beheben</span>
-    </div>
-    <div class="panel-body">
-        Wassertank gefüllt? <span class="label label-danger">Bitte beheben</span>
-    </div>
-    <div class="panel-body">
-        Warteschlangenposition? <span class="label label-success">Position 1</span>
-    </div>
-</div>
-</form>
+<ul>
+    <li ng-repeat="user in warteschlange(users)">{{user.name}}<button class="btn btn-lg btn-success btn-block" type="submit">löschen</button></li> <!-- Dynamische Tabelle mit der Warteschlange wird erstellt und hinter jedem User soll ein Button sein, der das löschen des Users aus der Datenbank ermöglicht-->
+</ul>
 
 <form class="form-signin">
-<button id="orderbtn" class="btn btn-lg btn-success btn-block" type="submit"><span class=" glyphicon glyphicon-euro" aria-hidden="true"></span> Kostenpflichtig bestellen</button>
+<button class="btn btn-lg btn-success btn-block" type="submit">Rechnung drucken</button>
 </form>
 
 </body>
