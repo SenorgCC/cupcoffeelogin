@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea1a2c4c-2835-41f7-86c9-9fd755c90696" name="Default" comment="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : escape sequences für &quot; müssen noch weg">
+    <list default="true" id="ea1a2c4c-2835-41f7-86c9-9fd755c90696" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firsttrylogin.php" afterPath="$PROJECT_DIR$/firsttrylogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/logincontrol.js" afterPath="$PROJECT_DIR$/scripts/logincontrol.js" />
     </list>
     <ignored path="cupcoffeeloginUML.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -452,7 +450,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448556779944</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : escape sequences für &quot; müssen noch weg">
+      <created>1448557320889</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1448557320889</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
