@@ -1,23 +1,25 @@
 <?php
 
-    $host = "localhost:3306";
-    $user = "root";
-    $pass= "";
-    $databasename="cupcoffedb";
-    $tableName= "logindata";
+        $usrname=$_POST['username'];
+        $usrpassword=$_POST['userpassword'];
+        $host = "localhost:3306";
+        $user = "root";
+        $pass= "";
+        $databasename="cupcoffedb";
+        $tableName= "logindata";
+        //connection to the database
 
-//connection to the database
 
-$con = mysqli_connect($host, $user, $pass);
 
-$dbs = mysqli_select_db($con,$databasename);
+        $con = mysqli_connect($host, $user, $pass);
 
-//Query Data from Database
+        $dbs = mysqli_select_db($con,$databasename);
 
-$result= mysqli_query($con, "Select name From $tableName where name=$usrname and p");
-$array = mysqli_fetch_row($result);
-//echo
-echo json_encode($array);
+        //Query Data from Database
 
+        $result= mysqli_query($con, "Select Name From $tableName where Name=$usrname");
+
+        //echo
+        //echo json_encode($result);
 
 ?>

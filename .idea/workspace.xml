@@ -4,7 +4,6 @@
     <list default="true" id="ea1a2c4c-2835-41f7-86c9-9fd755c90696" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firsttrylogin.php" afterPath="$PROJECT_DIR$/firsttrylogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginmainpage.html" afterPath="$PROJECT_DIR$/loginmainpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/logincontrol.js" afterPath="$PROJECT_DIR$/scripts/logincontrol.js" />
     </list>
     <ignored path="cupcoffeeloginUML.iws" />
@@ -47,7 +46,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
                   <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-                  <folding />
+                  <folding>
+                    <marker date="1448542565243" expanded="true" signature="5:7" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -55,16 +56,26 @@
           <file leaf-file-name="firsttrylogin.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/firsttrylogin.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.43784994">
+                <state vertical-scroll-proportion="0.42546245">
                   <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
                   <folding>
-                    <marker date="1448542068165" expanded="true" signature="312:329" placeholder="Select * Fro..${$tableName}..." />
-                    <marker date="1448542068165" expanded="true" signature="312:346" placeholder="Select name ..${$tableName}..." />
-                    <marker date="1448542068165" expanded="true" signature="312:351" placeholder="Select name ..${$tableName}..." />
-                    <marker date="1448542068165" expanded="true" signature="312:352" placeholder="Select name ..${$tableName}..." />
-                    <marker date="1448542068165" expanded="true" signature="312:365" placeholder="Select name ..${$tableName}..." />
-                    <marker date="1448542068165" expanded="true" signature="312:367" placeholder="Select * Fro..${$tableName}..." />
+                    <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
+                    <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
+                    <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
+                    <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
+                    <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
+                    <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mainpage.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/mainpage.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -76,8 +87,8 @@
           <file leaf-file-name="logincontrol.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8139282">
-                  <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+                <state vertical-scroll-proportion="0.7040261">
+                  <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
                   <folding />
                 </state>
               </provider>
@@ -99,8 +110,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/logincontrol.js" />
         <option value="$PROJECT_DIR$/loginmainpage.html" />
+        <option value="$PROJECT_DIR$/scripts/logincontrol.js" />
         <option value="$PROJECT_DIR$/firsttrylogin.php" />
       </list>
     </option>
@@ -116,6 +127,9 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -149,6 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,7 +212,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
@@ -227,8 +241,141 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/mainpage.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/adminview-kosten.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/adminview-rechnung.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/adminview-warteschlange.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/adminview.html</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -243,6 +390,18 @@
       <command value="run-script" />
       <scripts />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -268,24 +427,31 @@
       <option name="project" value="LOCAL" />
       <updated>1448536441734</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="jquery and php combination for db communication">
+      <created>1448542142576</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1448542142576</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="3963000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14479166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767624" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273495" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -294,12 +460,11 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -330,25 +495,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/signin.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/firsttrylogin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
-            <marker date="1448542068165" expanded="true" signature="312:329" placeholder="Select * Fro..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:346" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:351" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:352" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:365" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:367" placeholder="Select * Fro..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
           </folding>
         </state>
       </provider>
@@ -375,7 +532,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1448542565243" expanded="true" signature="5:7" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -384,12 +543,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
-            <marker date="1448542068165" expanded="true" signature="312:329" placeholder="Select * Fro..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:346" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:351" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:352" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:365" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:367" placeholder="Select * Fro..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
           </folding>
         </state>
       </provider>
@@ -416,7 +575,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1448542565243" expanded="true" signature="5:7" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -425,12 +586,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
           <folding>
-            <marker date="1448542068165" expanded="true" signature="312:329" placeholder="Select * Fro..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:346" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:351" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:352" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:365" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:367" placeholder="Select * Fro..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
           </folding>
         </state>
       </provider>
@@ -767,7 +928,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
+          <folding>
+            <marker date="1448542565243" expanded="true" signature="5:7" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -781,25 +944,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mainpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8139282">
-          <caret line="44" column="36" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.7040261">
+          <caret line="57" column="69" selection-start-line="57" selection-start-column="69" selection-end-line="57" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/firsttrylogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43784994">
+        <state vertical-scroll-proportion="0.42546245">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <marker date="1448542068165" expanded="true" signature="312:329" placeholder="Select * Fro..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:346" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:351" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:352" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:365" placeholder="Select name ..${$tableName}..." />
-            <marker date="1448542068165" expanded="true" signature="312:367" placeholder="Select * Fro..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:472" placeholder="Select * Fro..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:489" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:494" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:495" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:502" placeholder="Select name ..${$tableName}..." />
+            <marker date="1448548384708" expanded="true" signature="455:504" placeholder="Select * Fro..${$tableName}..." />
           </folding>
         </state>
       </provider>
