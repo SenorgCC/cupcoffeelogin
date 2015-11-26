@@ -32,16 +32,24 @@ var app = angular.module('Cupcoffeelogin', [])
                 //PHP-Datei enthällt die function logincheck, die true oder false zurück gibt
 
 
-                $.ajax({
-                    url:'firsttrylogin.php',
-                    data:"",
-                    dataType: 'json',
-                    success: function(data){
-                        alert("erfolg!");
-                       alert(data);
+                var result =$.ajax({
+                                type:"GET",
+                                url:'firsttrylogin.php',
+                                param:'{}',
+                                data:"{}",
+                                contentType:"application/json; charset=utf-8",
+                                dataType: 'json',
+                                async:false,
+                                success: function(data){
 
-                    }
-                });
+                                    alert("erfolg");
+                                  }
+                             });
+                alert(JSON.stringify(result));
+
+
+
+
 
                 //suchenachkorrekten eingaben
                 for (var i = 0; i <= $scope.accounts.length-1; i++) {
