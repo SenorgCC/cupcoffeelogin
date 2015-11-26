@@ -7,15 +7,15 @@
     $tableName= "logindata";
 
 //connection to the database
-include 'DB.php';
-$con = mysql_connect($host, $user, $pass);
-$dbs = mysql_select($databasename, $con);
+
+$con = mysqli_connect($host, $user, $pass);
+
+$dbs = mysqli_select_db($con,$databasename);
 
 //Query Data from Database
 
-$result= mysql_query("Select * From $tableName);
-$array = mysql_fetch_row($result);
-
+$result= mysqli_query($con, "Select name From $tableName where name=$usrname and p");
+$array = mysqli_fetch_row($result);
 //echo
 echo json_encode($array);
 
