@@ -6,9 +6,30 @@ var app= angular.module('CupCoffeeMainpage', []);
 
 app.controller('mainpagecontroller', function($scope){
 
-    $scope.username=window.sessionStorage.getItem("Username");
+        $scope.initall=function() {
+            $scope.username = window.sessionStorage.getItem("Username");
+            $scope.getKontostand($scope.username);
+
+        };
+        $scope.getKontostand=function(usrname){
+
+                $.ajax({
+                    type:'GET',
+                    url:'getkontostand.php',
+                    datatype:'json',
+                    data:{username:usrname},
+                    contenttype: 'application/json',
+                    async:false,
+                    success: function(data){
 
 
-    //FUNKTIONEN LOGIK!
+                        $scope.kontostand= JSON.parse(data);
+                        alert($scope.kontostand);
+                    }
+                });
+
+
+        };
+        //FUNKTIONEN LOGIK!
 });
 
