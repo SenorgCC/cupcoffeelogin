@@ -66,29 +66,52 @@ var app = angular.module('Cupcoffeelogin', [])
             };
         });
     });
-app.controller('registercontroller',function($scope){
+app.controller('registercontroller',function($scope,$http,$window){
 
     $(document).ready(function(){
+        $('#PasswordWarning').hide();
+        $('#WorngPasswordBtn').click(function () {
+            $('#PasswordWarning').fadeOut();
+        });
+        $('#successfullcreation').hide();
 
-        $scope.register=function(usrname, usrpassword){
+
+        $scope.register=function(usrname, usrpassword1,usrpassword2){
             //öffnet ein neues fenster zum registrieren des nutzters
 
-            alert(usrname+ " "+usrpassword);
-
-            $.ajax({
-                type:'POST',
-                url:'register.php',
-                datatype:'json',
-                data:{username:usrname,userpassword:usrpassword},
-                contenttype: 'application/json',
-                async:false,
-                success: function(data){
-
-                    alert(JSON.stringify(data));
+            korrektpasswordflag=false;
 
 
-                }
-            });
+            if(usrpassword1==usrpassword2){
+
+                $.ajax({
+                    type:'POST',
+                    url:'register.php',
+                    datatype:'json',
+                    data:{username:usrname,userpassword:usrpassword1},
+                    contenttype: 'application/json',
+                    async:false,
+                    success: function(data){
+
+
+                        $('#successfullcreation').fadeIn('slow',function(){
+                            $(this).delay(2000).fadeOut('slow');
+                            //hiermit wird eine zurückführung zum login simuliert
+                            $window.location.href= ('loginmainpage.html');
+
+                        });
+
+
+                    }
+                });
+
+            }else{
+                $('#PasswordWarning').fadeIn();
+                $scope.userregpassword1='';
+                $scope.usrregpassword2='';
+
+            }
+
 
         };
 

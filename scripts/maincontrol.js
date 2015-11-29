@@ -8,7 +8,7 @@ app.controller('mainpagecontroller', function($scope){
 
     $scope.username=window.sessionStorage.getItem("Username");
 
-    alert($scope.username);
+
     //FUNKTIONEN LOGIK!
 });
 
