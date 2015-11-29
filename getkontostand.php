@@ -6,14 +6,10 @@
         $user = "root";
         $pass= "";
 
-
         //DB Daten
 
         $databasename="cupcoffedb";
         $tableName= "logindata";
-
-
-
 
         //connection to the database
         $con = mysqli_connect($host, $user, $pass, $databasename, 3306);
@@ -26,8 +22,6 @@
             echo $row['Guthaben'];
         }
 
-
         //beendet die Verbindung zur Datenbank
         mysqli_close($con);
-
 ?>

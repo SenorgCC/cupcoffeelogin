@@ -4,31 +4,38 @@
 
 var app= angular.module('CupCoffeeMainpage', []);
 
-app.controller('mainpagecontroller', function($scope){
+app.controller('mainpagecontroller', function($scope,$window,$http){
 
-        $scope.initall=function() {
+            $scope.initall=function() {
 
-            $scope.username = window.sessionStorage.getItem("Username");
-            $scope.getKontostand($scope.username);
+                $scope.username = window.sessionStorage.getItem("Username");
+                $scope.getKontostand($scope.username);
 
-        };
-        $scope.getKontostand=function(usrname){
+            };
 
-               $.ajax({
-                    type:'POST',
-                    url:'getkontostand.php',
-                    datatype:'json',
-                    data:{username:usrname},
-                    contenttype: 'json/html',
-                    async:false,
-                    success: function(data){
-                        $scope.kontostand= JSON.parse(data);
-                    }
-                });
+            $scope.getKontostand=function(usrname){
+                   $.ajax({
+                        type:'POST',
+                        url:'getkontostand.php',
+                        datatype:'json',
+                        data:{username:usrname},
+                        contenttype: 'json/html',
+                        async:false,
+                        success: function(data){
+                            $scope.kontostand= JSON.parse(data);
+                        }
+                    });
+
+            };
 
 
-        };
-        //FUNKTIONEN LOGIK!
+
+        $('#abmeldfeld').click(function(){
+            window.sessionStorage.removeItem("Username");
+            $window.location.href=('loginmainpage.html');
+        });
+
+
 });
 
 app.controller('changePasswordCtrl', function($scope,$window){
@@ -45,7 +52,6 @@ app.controller('changePasswordCtrl', function($scope,$window){
 
             if(usrpassword1==usrpassword2){
 
-
                 $.ajax({
                     type:'POST',
                     url:'changeuserpassword.php',
@@ -58,13 +64,12 @@ app.controller('changePasswordCtrl', function($scope,$window){
                         $('#successfullChangePassword').fadeIn('slow',function(){
                             $(this).delay(2000).fadeOut('slow');
                             //hiermit wird eine zurückführung zum login simuliert
-                            $window.location.href= ('loginmainpage.html');
+                            $window.location.href= ('mainpage.html');
 
                         });
 
                     }
                 });
-
 
             }else{
                 $('#WorngChangePassword').fadeIn('slow');
@@ -74,11 +79,7 @@ app.controller('changePasswordCtrl', function($scope,$window){
 
         };
 
-
-
     });
-
-
 
 });
 
