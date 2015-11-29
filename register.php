@@ -9,7 +9,7 @@
         $pass= "";
 
         //DB Daten
-        echo("Test1");    $databasename="cupcoffedb";
+        $databasename="cupcoffedb";
         $tableName= "logindata";
 
         //connection to the database
