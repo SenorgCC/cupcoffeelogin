@@ -4,7 +4,7 @@
     <list default="true" id="ea1a2c4c-2835-41f7-86c9-9fd755c90696" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getkontostand.php" afterPath="$PROJECT_DIR$/getkontostand.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/maincontrol.js" afterPath="$PROJECT_DIR$/scripts/maincontrol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainpage.html" afterPath="$PROJECT_DIR$/mainpage.html" />
     </list>
     <ignored path="cupcoffeeloginUML.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,24 +61,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="mainpage.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="mainpage.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/mainpage.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-3.9230769">
-                  <caret line="14" column="84" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="84" />
+                <state vertical-scroll-proportion="0.2094065">
+                  <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="getkontostand.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="getkontostand.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/getkontostand.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3807391">
-                  <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
+                <state vertical-scroll-proportion="-11.115385">
+                  <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
                   <folding>
-                    <marker date="1448800417294" expanded="true" signature="565:602" placeholder="select Gutha..${$tableName}..." />
-                    <marker date="1448800417294" expanded="true" signature="565:619" placeholder="select Gutha..${$tableName}..." />
+                    <marker date="1448800600246" expanded="true" signature="566:603" placeholder="select Gutha..${$tableName}..." />
+                    <marker date="1448800600246" expanded="true" signature="566:620" placeholder="select Gutha..${$tableName}..." />
                   </folding>
                 </state>
               </provider>
@@ -143,9 +143,9 @@
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/loginmainpage.html" />
         <option value="$PROJECT_DIR$/scripts/logincontrol.js" />
-        <option value="$PROJECT_DIR$/mainpage.html" />
         <option value="$PROJECT_DIR$/scripts/maincontrol.js" />
         <option value="$PROJECT_DIR$/getkontostand.php" />
+        <option value="$PROJECT_DIR$/mainpage.html" />
       </list>
     </option>
   </component>
@@ -404,7 +404,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448758421359</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="registrierung repariert&#10;--&gt; passwortcheck integriert&#10;--&gt; DB Guthaben hinzugefügt&#10;------&gt;ID's werden autoincrementiert&#10;--&gt; Nutzer + Cash werden auf der Hauptseite angezeigt">
+      <created>1448800495343</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1448800495343</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -416,6 +422,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1453125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -424,7 +431,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -461,7 +467,8 @@
     <MESSAGE value="php: ajax communication funktioniert&#10;php &lt;-&gt; mysql : funktioniert !&#10;php &lt;-&gt; ajax : funktioniert!&#10;alles kommentiert" />
     <MESSAGE value="angular anpassung mainpage" />
     <MESSAGE value="registrierung repariert&#10;--&gt; passwortcheck integriert&#10;--&gt; DB Guthaben hinzugefügt&#10;------&gt;ID's werden autoincrementiert&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="registrierung repariert&#10;--&gt; passwortcheck integriert&#10;--&gt; DB Guthaben hinzugefügt&#10;------&gt;ID's werden autoincrementiert&#10;" />
+    <MESSAGE value="registrierung repariert&#10;--&gt; passwortcheck integriert&#10;--&gt; DB Guthaben hinzugefügt&#10;------&gt;ID's werden autoincrementiert&#10;--&gt; Nutzer + Cash werden auf der Hauptseite angezeigt" />
+    <option name="LAST_COMMIT_MESSAGE" value="registrierung repariert&#10;--&gt; passwortcheck integriert&#10;--&gt; DB Guthaben hinzugefügt&#10;------&gt;ID's werden autoincrementiert&#10;--&gt; Nutzer + Cash werden auf der Hauptseite angezeigt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -920,31 +927,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mainpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="14" column="84" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/logincontrol.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
           <folding>
             <marker date="1448790227693" expanded="true" signature="3989:4000" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getkontostand.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3807391">
-          <caret line="20" column="103" selection-start-line="20" selection-start-column="103" selection-end-line="20" selection-end-column="103" />
-          <folding>
-            <marker date="1448800417294" expanded="true" signature="565:602" placeholder="select Gutha..${$tableName}..." />
-            <marker date="1448800417294" expanded="true" signature="565:619" placeholder="select Gutha..${$tableName}..." />
           </folding>
         </state>
       </provider>
@@ -956,6 +944,25 @@
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getkontostand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <marker date="1448800600246" expanded="true" signature="566:603" placeholder="select Gutha..${$tableName}..." />
+            <marker date="1448800600246" expanded="true" signature="566:620" placeholder="select Gutha..${$tableName}..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mainpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2094065">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

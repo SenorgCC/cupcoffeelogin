@@ -6,6 +6,7 @@
         $user = "root";
         $pass= "";
 
+
         //DB Daten
 
         $databasename="cupcoffedb";
