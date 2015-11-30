@@ -35,17 +35,6 @@
     </div>
 
     <div ng-view="homepageregisterview" class="container" ng-controller="registercontroller"  ng-show="showregflag">
-
-        <div id="PasswordWarning" class="alert alert-danger " role="alert">
-            <button type="button" class="close" aria-label="Close" id="WorngPasswordBtn">x</button>
-            <label id="WrongPasswordWarning">Das eingegebene Passwort stimmt nicht überein!</label>
-        </div>
-
-        <div id="successfullcreation" class="alert alert-success " role="alert">
-            <button type="button" class="close" aria-label="Close" id="successfullUSRcreate">x</button>
-            <label id="successfullUSR">Der Benutzer {{userregname}} wurde erfolgreich erstellt !</label>
-        </div>
-
         <form class="form-signin"><!--bla-->
 
             <div>
@@ -55,9 +44,9 @@
             </div>
 
             <div class="input-group">
-                <div> Passwort eintragen<input ng-model="userregpassword1" type="password" class="form-control" aria-label="..."></div>
-                <div>Passwort wiederholen<input ng-model="usrregpassword2" type="password" class="form-control" aria-label="..."></div>
-                <button class="btn btn-lg btn-success btn-block" type="submit" ng-click="register(userregname,userregpassword1,usrregpassword2)">Registrieren</button>
+                <div> Passwort eintragen<input ng-model="userregpassword" type="password" class="form-control" aria-label="..."></div>
+                <div>Passwort wiederholen<input type="password" class="form-control" aria-label="..."></div>
+                <button class="btn btn-lg btn-success btn-block" type="submit" ng-click="register(userregname,userregpassword)">Registrieren</button>
             </div>
         </form>
     </div>

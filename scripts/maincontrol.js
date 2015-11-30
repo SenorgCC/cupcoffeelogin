@@ -30,10 +30,11 @@ app.controller('mainpagecontroller', function($scope,$window,$http){
 
 
 
-        $('#abmeldfeld').click(function(){
+       $scope.abmelden=function(event){
             window.sessionStorage.removeItem("Username");
+            event.stopPropagation();
             $window.location.href=('loginmainpage.html');
-        });
+        };
 
 
 });

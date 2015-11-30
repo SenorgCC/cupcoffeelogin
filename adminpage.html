@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de" ng-app="CupCoffeeAdminpage">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrationsseite</title>
+    <script src="sources/angular.min.js"></script>
+    <script src="sources/jquery-2.1.4.min.js"></script>
+    <script src="scripts/admincontrol.js"></script>
+    <link href="signin.css" rel="stylesheet">
+    <link rel="stylesheet" href="sources/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid" ng-controller="adminpagecontroller" ng-init="initall()">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">CoffeeCup</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- linker Teil der navbar-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="adminview-kosten.html">Kosten einstellen <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="adminview-rechnung.html">Rechnung erstellen</a></li>
+                <li class="active"><a href="adminview-warteschlange.html">Warteschlange administrieren</a></li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right"> <!-- rechter Teil der navbar-->
+                <li><div class="panel panel-default">
+                    <div class="panel-body">
+                        {{username}}
+                    </div>
+                </div></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Passwort ändern</a></li>
+                <li><a href="#"><span ng-click="abmelden" class="glyphicon glyphicon-log-out" aria-hidden="true"></span>Abmelden</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--Kosten-->
+
+<form class="form-signin">
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            aktueller Preis
+        </div>
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="form-control" aria-label="...">
+        <button class="btn btn-lg btn-success btn-block" type="submit">Preis ändern</button>
+    </div>
+</form>
+
+<!--Rechnung-->
+
+<ul>
+    <li ng-repeat="user in Database(users)">{{user.name}}</li> <!-- Dynamische liste mit allen Usern und dem aktuellen Rechnungsbetrag soll angezeigt werden-->
+</ul>
+
+<form class="form-signin">
+    <button class="btn btn-lg btn-success btn-block" type="submit">Rechnung drucken</button> <!-- Bei Klick auf den Button muss die Rechnung ausgedruckt werden und alle Beträge in der Datenbank zurückgesetzt werden-->
+</form>
+
+<!--Warteschlange-->
+<ul>
+    <li ng-repeat="user in warteschlange(users)">{{user.name}}<button class="btn btn-lg btn-success btn-block" type="submit">löschen</button></li> <!-- Dynamische Tabelle mit der Warteschlange wird erstellt und hinter jedem User soll ein Button sein, der das löschen des Users aus der Datenbank ermöglicht-->
+</ul>
+
+<form class="form-signin">
+    <button class="btn btn-lg btn-success btn-block" type="submit">Rechnung drucken</button>
+</form>
+
+</body>
+</html>
