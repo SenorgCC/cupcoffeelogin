@@ -9,7 +9,7 @@
         //DB Daten
 
         $databasename="cupcoffedb";
-        $tableName= "logindata";
+        $tableName= "warteschlangenliste";
 
         //Rückgabestring für den Controller
         $json=array();
@@ -18,7 +18,7 @@
         $con = mysqli_connect($host, $user, $pass, $databasename, 3306);
 
         //Query Data from Database
-        $result= mysqli_query( $con, "select ID, Name, Password, IsAdmin from $tableName ");
+        $result= mysqli_query( $con, "select ID, UserName from $tableName ");
 
         //Jede Einzelne Zeile muss einzeln eingelesen und Gespeichert werden, da sonst "false"
         //zurückgegeben wird
@@ -27,10 +27,8 @@
             while($row = mysqli_fetch_assoc($result)) {
 
                $bus= array(
-               'id'=> (int)$row['ID'],
-               'name'=>$row['Name'],
-               'passwort'=>$row['Password'],
-               'IsAdmin'=>$row['IsAdmin']
+               'ID'=> (int)$row['ID'],
+               'name'=>$row['UserName']
                );
                array_push($json,$bus);
             }

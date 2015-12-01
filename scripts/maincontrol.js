@@ -10,6 +10,7 @@ app.controller('mainpagecontroller', function($scope,$window,$http){
 
                 $scope.username = window.sessionStorage.getItem("Username");
                 $scope.getKontostand($scope.username);
+                $scope.getQueuePos();
 
             };
 
@@ -27,6 +28,23 @@ app.controller('mainpagecontroller', function($scope,$window,$http){
                     });
 
             };
+
+            $scope.getQueuePos=function(){
+
+                $scope.actualqueue=1;
+
+                $.ajax({
+                    type:'GET',
+                    url:'warteschlangenliste.php',
+                    datatype:'json',
+                    async:false,
+                    success: function(data){
+                            alert(JSON.stringify(data));
+                            $scope.actualqueue=data.length();
+
+                    }
+                })
+            }
 
 
 

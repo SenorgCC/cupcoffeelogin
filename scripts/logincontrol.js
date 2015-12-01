@@ -18,6 +18,7 @@ var app = angular.module('Cupcoffeelogin', [])
             $scope.submit=function(usrname, usrpassword) {
                 //loginflag vorerst zum test ausfrühren, extremer pfusch!
                 var correctloginflag = false;
+                var adminflag= false;
 
                 //JQuery Kommunikation durch PHP mit der mysql db.
                 //PHP-Datei enthällt die function logincheck, die true oder false zurück gibt
@@ -44,6 +45,9 @@ var app = angular.module('Cupcoffeelogin', [])
                     if ($scope.accounts[i].name == usrname) {
                         if ($scope.accounts[i].passwort == usrpassword) {
                             correctloginflag=true;
+                            if($scope.accounts[i].IsAdmin == 1){
+                                adminflag = true;
+                            }
                             //keine weitere durchsuchung der schleife nötig, da einmalige nutzter
                             break;
                         }
@@ -53,9 +57,13 @@ var app = angular.module('Cupcoffeelogin', [])
                 if(correctloginflag == true){
                     $('#loginAlertwelcome').fadeIn('slow',function(){
                         $(this).delay(800).fadeOut('slow');
-                        window.sessionStorage.setItem("Username",usrname);
-                        $window.location.href= ('mainpage.html');
-
+                        if(adminflag == true){
+                            window.sessionStorage.setItem("Username",usrname);
+                            $window.location.href= ('adminpage.html');
+                        }else{
+                            window.sessionStorage.setItem("Username",usrname);
+                            $window.location.href= ('mainpage.html');
+                        }
                     });
                 }else{
                     $('#loginAlertwarning').fadeIn();
