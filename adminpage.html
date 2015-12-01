@@ -35,7 +35,7 @@
 
             <ul class="nav navbar-nav navbar-right"> <!-- rechter Teil der navbar-->
                 <li><div class="panel panel-default">
-                    <div class="panel-body">
+                    <div id="username" class="panel-body">
                         {{username}}
                     </div>
                 </div></li>
@@ -61,7 +61,7 @@
 
             <div class="input-group">
                 <input type="text" class="form-control" aria-label="...">
-                <button class="btn btn-lg btn-success btn-block" type="submit">Preis ändern</button>
+                <button id="setpreis" class="btn btn-lg btn-success btn-block" type="submit">Preis ändern</button>
             </div>
         </form>
     </div>
@@ -74,7 +74,7 @@
         </ul>
 
         <form class="form-signin">
-            <button class="btn btn-lg btn-success btn-block" type="submit">Rechnung drucken</button> <!-- Bei Klick auf den Button muss die Rechnung ausgedruckt werden und alle Beträge in der Datenbank zurückgesetzt werden-->
+            <button id="printrechnung" class="btn btn-lg btn-success btn-block" type="submit">Rechnung drucken</button> <!-- Bei Klick auf den Button muss die Rechnung ausgedruckt werden und alle Beträge in der Datenbank zurückgesetzt werden-->
         </form>
     </div>
 
