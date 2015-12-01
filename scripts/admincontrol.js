@@ -45,4 +45,26 @@ app.controller('adminviewcontroller', function($scope)
             $scope.showrechnungflag=false;
             $scope.showwarteschlangeflag=true;
         }
+
+        $scope.highlightaktiv=function(aktive){
+
+            if(aktive=='kosten') {
+                $('#kosteneinstellenlbl').addClass("active");
+                $('#rechnungDruckenlbl').removeClass("active");
+                $('#warteschlangenlbl').removeClass("active");
+
+            }
+            if(aktive=='rechnung'){
+                $('#kosteneinstellenlbl').removeClass("active");
+                $('#rechnungDruckenlbl').addClass("active");
+                $('#warteschlangenlbl').removeClass("active");
+            }
+
+            if(aktive=='schlange'){
+                $('#kosteneinstellenlbl').removeClass("active");
+                $('#rechnungDruckenlbl').removeClass("active");
+                $('#warteschlangenlbl').addClass("active");
+            }
+
+        }
 });
