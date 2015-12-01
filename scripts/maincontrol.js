@@ -29,22 +29,40 @@ app.controller('mainpagecontroller', function($scope,$window,$http){
 
             };
 
+            $scope.addtoQueue=function(konstostand){
+                var kontostand = kontostand+2.50;
+                $.ajax({
+                    type:'POST',
+                    url:'addToQueue.php',
+                    datatype:'json',
+                    data:{username:$scope.username, konto:kontostand},
+                    contenttype:'json/html',
+                    async:false,
+                    success: function(data){
+
+                        $scope.getKontostand($scope.username);
+                        $scope.getQueuePos();
+                    }
+
+                });
+            };
+
             $scope.getQueuePos=function(){
 
-                $scope.actualqueue=1;
+                $scope.actualqueue=0;
 
                 $.ajax({
-                    type:'GET',
-                    url:'warteschlangenliste.php',
+                    type:'POST',
+                    url:'getqueuepos.php',
                     datatype:'json',
                     async:false,
                     success: function(data){
-                            alert(JSON.stringify(data));
-                            $scope.actualqueue=data.length();
+
+                            $scope.actualqueue=data;
 
                     }
                 })
-            }
+            };
 
 
 

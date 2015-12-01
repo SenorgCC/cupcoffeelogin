@@ -58,8 +58,8 @@
     <div id="wasser" class="panel-body">
         Wassertank gefüllt? <span class="label label-danger">Bitte beheben</span>
     </div>
-    <div class="panel-body">
-        Warteschlangenposition? <span class="label label-success" ng-model="actualqueue">Position: {{actualqueue}}</span>
+    <div class="panel-body" ng-init="getQueuePos()">
+        Warteschlangenposition? <span class="label label-success" >Position: {{actualqueue}} </span>
     </div>
 </div>
 </form>
