@@ -6,7 +6,7 @@ var app= angular.module('CupCoffeeMainpage', []);
 
 app.controller('mainpagecontroller', function($scope,$window,$http){
 
-            $scope.initall=function() {
+            $scope.inital=function() {
 
                 $scope.username = window.sessionStorage.getItem("Username");
                 $scope.getKontostand($scope.username);

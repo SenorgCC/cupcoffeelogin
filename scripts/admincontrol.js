@@ -6,7 +6,7 @@ var app= angular.module('CupCoffeeAdminpage', []);
 
 app.controller('adminpagecontroller', function($scope,$window,$http){
 
-    $scope.initall=function()
+    $scope.inital=function()
     {
         $scope.username = window.sessionStorage.getItem("Username");
     };
@@ -24,3 +24,22 @@ app.controller('adminpagecontroller', function($scope,$window,$http){
 
 
 });
+    app.controller('adminviewcontroller', function($scope){
+        $scope.init=function(){
+
+            $scope.showkostenflag=true;
+            $scope.showrechnungflag=false;
+            $scope.showwarteschlangeflag=false;
+        }
+        $scope.showrechnung=function()
+        {
+            $scope.showkostenflag=false;
+            $scope.showrechnungflag=true;
+            $scope.showwarteschlangeflag=false;
+        }
+        $scope.showwarteschlange=function(){
+            $scope.showrechnungflag=false;
+            $scope.showkostenflag=false;
+            $scope.showwarteschlangeflag=true;
+        }
+    });
