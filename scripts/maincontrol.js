@@ -28,6 +28,7 @@ app.controller('mainpagecontroller', function($scope,$window,$http){
                     });
 
             };
+            //kek
 
             $scope.addtoQueue=function(konstostand){
                 var kontostand = kontostand+2.50;
