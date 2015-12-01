@@ -4,7 +4,8 @@
 
 var app= angular.module('CupCoffeeAdminpage', []);
 
-app.controller('adminpagecontroller', function($scope,$window,$http){
+app.controller('adminpagecontroller', function($scope,$window,$http)
+{
 
     $scope.inital=function()
     {
@@ -24,9 +25,10 @@ app.controller('adminpagecontroller', function($scope,$window,$http){
 
 
 });
-    app.controller('adminviewcontroller', function($scope){
-        $scope.init=function(){
-
+app.controller('adminviewcontroller', function($scope)
+{
+        $scope.showkosten=function()
+        {
             $scope.showkostenflag=true;
             $scope.showrechnungflag=false;
             $scope.showwarteschlangeflag=false;
@@ -37,9 +39,10 @@ app.controller('adminpagecontroller', function($scope,$window,$http){
             $scope.showrechnungflag=true;
             $scope.showwarteschlangeflag=false;
         }
-        $scope.showwarteschlange=function(){
-            $scope.showrechnungflag=false;
+        $scope.showwarteschlange=function()
+        {
             $scope.showkostenflag=false;
+            $scope.showrechnungflag=false;
             $scope.showwarteschlangeflag=true;
         }
-    });
+});

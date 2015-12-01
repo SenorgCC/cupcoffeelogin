@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="sources/bootstrap-3.3.5-dist/css/bootstrap.min.css">
 </head>
 <body>
-
+<div  ng-controller="adminviewcontroller"ng-init="showkosten()">
 <nav class="navbar navbar-default">
     <div class="container-fluid" ng-controller="adminpagecontroller" ng-init="inital()">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,9 +25,9 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" ng-controller="adminviewcontroller"> <!-- linker Teil der navbar-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> <!-- linker Teil der navbar-->
             <ul class="nav navbar-nav">
-                <li class="active"><a ng-click="init()"href="">Kosten einstellen <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a ng-click="showkosten()"href="">Kosten einstellen <span class="sr-only">(current)</span></a></li>
                 <li class="active"><a ng-click="showrechnung()" href="">Rechnung erstellen</a></li>
                 <li class="active"><a ng-click="showwarteschlange()" href="">Warteschlange administrieren</a></li>
             </ul>
@@ -46,44 +46,46 @@
 </nav>
 <!--Navbar Ende-->
 
-<div ng-init="init()" ng-controller="adminviewcontroller">
+
+
 <!--Kosten-->
-<div ng-show="showkostenflag">
-<form class="form-signin">
+    <div  ng-show="showkostenflag">
+        <form class="form-signin">
 
-    <div class="panel panel-default">
-        <div class="panel-body">
-            aktueller Preis
-        </div>
-    </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                aktueller Preis
+                </div>
+            </div>
 
-    <div class="input-group">
-        <input type="text" class="form-control" aria-label="...">
-        <button class="btn btn-lg btn-success btn-block" type="submit">Preis ändern</button>
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="...">
+                <button class="btn btn-lg btn-success btn-block" type="submit">Preis ändern</button>
+            </div>
+        </form>
     </div>
-</form>
-</div>
 
 <!--Rechnung-->
 
-<div ng-show="showrechnungflag">
-<ul>
-    <li ng-repeat="user in Database(users)">{{user.name}}</li> <!-- Dynamische liste mit allen Usern und dem aktuellen Rechnungsbetrag soll angezeigt werden-->
-</ul>
+    <div ng-show="showrechnungflag">
+        <ul>
+            <li ng-repeat="user in Database(users)">{{user.name}}</li> <!-- Dynamische liste mit allen Usern und dem aktuellen Rechnungsbetrag soll angezeigt werden-->
+        </ul>
 
-<form class="form-signin">
-    <button class="btn btn-lg btn-success btn-block" type="submit">Rechnung drucken</button> <!-- Bei Klick auf den Button muss die Rechnung ausgedruckt werden und alle Beträge in der Datenbank zurückgesetzt werden-->
-</form>
-</div>
+        <form class="form-signin">
+            <button class="btn btn-lg btn-success btn-block" type="submit">Rechnung drucken</button> <!-- Bei Klick auf den Button muss die Rechnung ausgedruckt werden und alle Beträge in der Datenbank zurückgesetzt werden-->
+        </form>
+    </div>
 
 <!--Warteschlange-->
 
-<div ng-show="showwarteschlange">
-<ul>
-    <li ng-repeat="user in warteschlange(users)">{{user.name}}<button class="btn btn-lg btn-success btn-block" type="submit">löschen</button></li> <!-- Dynamische Tabelle mit der Warteschlange wird erstellt und hinter jedem User soll ein Button sein, der das löschen des Users aus der Datenbank ermöglicht-->
-</ul>
-</div>
+    <div ng-show="showwarteschlangeflag">
+        Testeintrag
+        <ul>
+            <li ng-repeat="user in warteschlange(users)">{{user.name}}<button class="btn btn-lg btn-success btn-block" type="submit">löschen</button></li> <!-- Dynamische Tabelle mit der Warteschlange wird erstellt und hinter jedem User soll ein Button sein, der das löschen des Users aus der Datenbank ermöglicht-->
+        </ul>
+    </div>
 
-</div>
+  </div>
 </body>
 </html>
