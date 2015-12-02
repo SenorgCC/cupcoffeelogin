@@ -4,9 +4,11 @@
 
 var app= angular.module('CupCoffeeMainpage', []);
 
-app.controller('mainpagecontroller', function($scope,$window,$http){
+app.controller('mainpagecontroller', function($scope,$window,$http)
+{
 
-            $scope.inital=function() {
+            $scope.inital=function()
+            {
 
                 $scope.username = window.sessionStorage.getItem("Username");
                 $scope.getKontostand($scope.username);
@@ -14,7 +16,8 @@ app.controller('mainpagecontroller', function($scope,$window,$http){
 
             };
 
-            $scope.getKontostand=function(usrname){
+            $scope.getKontostand=function(usrname)
+            {
                    $.ajax({
                         type:'POST',
                         url:'getkontostand.php',
@@ -29,7 +32,8 @@ app.controller('mainpagecontroller', function($scope,$window,$http){
 
             };
 
-            $scope.getQueuePos=function(){
+            $scope.getQueuePos=function()
+            {
 
                 $scope.actualqueue=1;
 
@@ -48,12 +52,20 @@ app.controller('mainpagecontroller', function($scope,$window,$http){
 
 
 
-       $scope.abmelden=function(){
+       $scope.abmelden=function()
+       {
             window.sessionStorage.removeItem("Username");
             event.stopPropagation();
             $window.location.href=('loginmainpage.html');
         };
-
+    $scope.usercheck=function() //Prüfen
+    {
+        $scope.username = window.sessionStorage.getItem("Username");
+        if(username!="Admin")
+        {
+                    $('#backlink').addhref("mainpage.html");
+        }
+    };
 
 });
 
