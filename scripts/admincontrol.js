@@ -15,11 +15,10 @@ app.controller('adminpagecontroller', function($scope,$window,$http)
 
 
 
-    $scope.abmelden=function()
-    {
+    $scope.abmelden=function(){
+
 
         window.sessionStorage.removeItem("Username");
-        event.stopPropagation();
         $window.location.href=('loginmainpage.html');
     };
 
