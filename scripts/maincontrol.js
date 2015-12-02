@@ -77,10 +77,11 @@ app.controller('mainpagecontroller', function($scope,$window,$http)
             event.stopPropagation();
             $window.location.href=('loginmainpage.html');
         };
+
     $scope.usercheck=function() //Prüfen
     {
         $scope.username = window.sessionStorage.getItem("Username");
-        if(username!="Admin")
+        if(username!="admin")
         {
                     $('#backlink').addhref("mainpage.html");
         }
