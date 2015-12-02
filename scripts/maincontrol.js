@@ -80,9 +80,12 @@ app.controller('mainpagecontroller', function($scope,$window,$http)
     $scope.usercheck=function() //Prüfen
     {
         $scope.username = window.sessionStorage.getItem("Username");
-        if(username!="Admin")
+
+        if($scope.username!='admin')
         {
-                    $('#backlink').addhref("mainpage.html");
+            $window.location.href= ('mainpage.html');
+        }else{
+            $window.location.href= ('adminpage.html');
         }
     };
 
