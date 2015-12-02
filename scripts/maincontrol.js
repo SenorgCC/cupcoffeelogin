@@ -69,7 +69,7 @@ app.controller('mainpagecontroller', function($scope,$window,$http)
                 })
             };
 
-
+        //
 
        $scope.abmelden=function()
        {
