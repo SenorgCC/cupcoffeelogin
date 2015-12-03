@@ -34,7 +34,7 @@ var app = angular.module('Cupcoffeelogin', [])
                 var result =$.ajax(
                     {
                     type:'GET',
-                    url:'firsttrylogin.php',
+                    url:'php/firsttrylogin.php',
                     datatype:'json',
                     contenttype: 'application/json',
                     async:false,
@@ -117,7 +117,7 @@ app.controller('registercontroller',function($scope,$http,$window)
 
                 $.ajax({
                     type:'POST',
-                    url:'register.php',
+                    url:'php/register.php',
                     datatype:'json',
                     data:{username:usrname,userpassword:usrpassword1},
                     contenttype: 'application/json',
@@ -158,7 +158,7 @@ app.controller('loginmaincontroller', function($scope){
    {
        $scope.showloginflag=true;
        $scope.showregflag=false;
-   }
+   };
     $scope.showregister=function()
     {
         $scope.showregflag=!$scope.showregflag;

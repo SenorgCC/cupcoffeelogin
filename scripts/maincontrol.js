@@ -116,7 +116,7 @@ app.controller('changePasswordCtrl', function($scope,$window)
 
                 $.ajax({
                     type:'POST',
-                    url:'changeuserpassword.php',
+                    url:'php/changeuserpassword.php',
                     datatype:'json',
                     data:{username:usrname, userpassword:usrpassword1},
                     contenttype: 'json/html',

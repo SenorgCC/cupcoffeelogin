@@ -31,19 +31,19 @@ app.controller('adminviewcontroller', function($scope)
             $scope.showkostenflag=true;
             $scope.showrechnungflag=false;
             $scope.showwarteschlangeflag=false;
-        }
+        };
         $scope.showrechnung=function()
         {
             $scope.showkostenflag=false;
             $scope.showrechnungflag=true;
             $scope.showwarteschlangeflag=false;
-        }
+        };
         $scope.showwarteschlange=function()
         {
             $scope.showkostenflag=false;
             $scope.showrechnungflag=false;
             $scope.showwarteschlangeflag=true;
-        }
+        };
 
         $scope.highlightaktiv=function(aktive)
         {
