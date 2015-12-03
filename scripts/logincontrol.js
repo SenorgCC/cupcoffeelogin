@@ -2,20 +2,25 @@
  * Created by Alex on 03.11.2015.
  */
 var app = angular.module('Cupcoffeelogin', [])
-    .controller('authenticationctrl', function($scope,$http,$window){
+    .controller('authenticationctrl', function($scope,$http,$window)
+    {
 
-        $(document).ready(function() {
+        $(document).ready(function()
+        {
             $('#loginAlertwarning').hide();
             $('#loginAlertwelcome').hide();
-            $('#worngAlarmLoginBtn').click(function () {
+            $('#worngAlarmLoginBtn').click(function ()
+            {
                 $('#loginAlertwarning').fadeOut();
             });
-            $('#welcomeAlarmBtn').click(function () {
+            $('#welcomeAlarmBtn').click(function ()
+            {
                 $('#loginAlertwelcome').fadeOut();
             });
 
 
-            $scope.submit=function(usrname, usrpassword) {
+            $scope.submit=function(usrname, usrpassword)
+            {
                 //loginflag vorerst zum test ausfrühren, extremer pfusch!
                 var correctloginflag = false;
                 var adminflag= false;
@@ -26,13 +31,15 @@ var app = angular.module('Cupcoffeelogin', [])
 
 
                 //AJAX Aufruf mittels JQuery
-                var result =$.ajax({
+                var result =$.ajax(
+                    {
                     type:'GET',
                     url:'firsttrylogin.php',
                     datatype:'json',
                     contenttype: 'application/json',
                     async:false,
-                    success: function(data){
+                    success: function(data)
+                    {
 
                         //JSON.parse wird benötigt, damit die zurückgegebenen Daten im Objekt Array
                         //Format erstellt werden
@@ -41,11 +48,15 @@ var app = angular.module('Cupcoffeelogin', [])
                 });
 
                 //suchenachkorrekten eingaben
-                for (var i = 0; i <= $scope.accounts.length-1; i++) {
-                    if ($scope.accounts[i].name == usrname) {
-                        if ($scope.accounts[i].passwort == usrpassword) {
+                for (var i = 0; i <= $scope.accounts.length-1; i++)
+                {
+                    if ($scope.accounts[i].name == usrname)
+                    {
+                        if ($scope.accounts[i].passwort == usrpassword)
+                        {
                             correctloginflag=true;
-                            if($scope.accounts[i].IsAdmin == 1){
+                            if($scope.accounts[i].IsAdmin == 1)
+                            {
                                 adminflag = true;
                             }
                             //keine weitere durchsuchung der schleife nötig, da einmalige nutzter
@@ -54,18 +65,25 @@ var app = angular.module('Cupcoffeelogin', [])
                     }
                 }
 
-                if(correctloginflag == true){
-                    $('#loginAlertwelcome').fadeIn('slow',function(){
+                if(correctloginflag == true)
+                {
+                    $('#loginAlertwelcome').fadeIn('slow',function()
+                    {
                         $(this).delay(800).fadeOut('slow');
-                        if(adminflag == true){
+                        if(adminflag == true)
+                        {
                             window.sessionStorage.setItem("Username",usrname);
                             $window.location.href= ('adminpage.html');
-                        }else{
+                        }
+                        else
+                        {
                             window.sessionStorage.setItem("Username",usrname);
                             $window.location.href= ('mainpage.html');
                         }
                     });
-                }else{
+                }
+                else
+                {
                     $('#loginAlertwarning').fadeIn();
                     //die inputfelder sollen wieder leer angezeigt werden
                     $scope.username='';
@@ -74,23 +92,28 @@ var app = angular.module('Cupcoffeelogin', [])
             };
         });
     });
-app.controller('registercontroller',function($scope,$http,$window){
+app.controller('registercontroller',function($scope,$http,$window)
+{
 
-    $(document).ready(function(){
+    $(document).ready(function()
+    {
         $('#PasswordWarning').hide();
-        $('#WorngPasswordBtn').click(function () {
+        $('#WorngPasswordBtn').click(function ()
+        {
             $('#PasswordWarning').fadeOut();
         });
         $('#successfullcreation').hide();
 
 
-        $scope.register=function(usrname, usrpassword1,usrpassword2){
+        $scope.register=function(usrname, usrpassword1,usrpassword2)
+        {
             //öffnet ein neues fenster zum registrieren des nutzters
 
             korrektpasswordflag=false;
 
 
-            if(usrpassword1==usrpassword2){
+            if(usrpassword1==usrpassword2)
+            {
 
                 $.ajax({
                     type:'POST',
@@ -102,7 +125,8 @@ app.controller('registercontroller',function($scope,$http,$window){
                     success: function(data){
 
 
-                        $('#successfullcreation').fadeIn('slow',function(){
+                        $('#successfullcreation').fadeIn('slow',function()
+                        {
                             $(this).delay(2000).fadeOut('slow');
                             //hiermit wird eine zurückführung zum login simuliert
                             $window.location.href= ('loginmainpage.html');
@@ -113,7 +137,9 @@ app.controller('registercontroller',function($scope,$http,$window){
                     }
                 });
 
-            }else{
+            }
+            else
+            {
                 $('#PasswordWarning').fadeIn();
                 $scope.userregpassword1='';
                 $scope.usrregpassword2='';
@@ -128,11 +154,13 @@ app.controller('registercontroller',function($scope,$http,$window){
 
 });
 app.controller('loginmaincontroller', function($scope){
-   $scope.init=function(){
+   $scope.init=function()
+   {
        $scope.showloginflag=true;
        $scope.showregflag=false;
    }
-    $scope.showregister=function(){
+    $scope.showregister=function()
+    {
         $scope.showregflag=!$scope.showregflag;
         $scope.showloginflag=!$scope.showloginflag;
     }
