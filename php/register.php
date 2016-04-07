@@ -9,7 +9,6 @@
         $pass= "";
 
         //DB Daten
-
         $databasename="cupcoffedb";
         $tableName= "logindata";
 
@@ -17,13 +16,8 @@
         $con = mysqli_connect($host, $user, $pass, $databasename, 3306);
 
         //Query Data from Database
-        $result= mysqli_query( $con, "insert into $tableName (Name, Password) VALUES ('$username','$userpassword')");
-
-
-        //Da Wir ein Objectarray benötigen muss das Datenarray erst ins JSON format umgewandelt werden
-
-
-        //Rückgabe der Daten
+        //Tabellenaufbau: ID(10)Auto_inc,Name varchar(20), Password varchar(20), Guthaben int (20)
+        $result= mysqli_query( $con, "insert into $tableName (Name, Password, Guthaben) VALUES ('$username','$userpassword',0)");
 
 
         //beendet die Verbindung zur Datenbank

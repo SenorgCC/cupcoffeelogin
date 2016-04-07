@@ -18,7 +18,7 @@
         $con = mysqli_connect($host, $user, $pass, $databasename, 3306);
 
         //Query Data from Database
-        $result= mysqli_query( $con, "select ID, Name, Password from $tableName ");
+        $result= mysqli_query( $con, "select ID, Name, Password, IsAdmin from $tableName ");
 
         //Jede Einzelne Zeile muss einzeln eingelesen und Gespeichert werden, da sonst "false"
         //zurückgegeben wird
@@ -29,7 +29,8 @@
                $bus= array(
                'id'=> (int)$row['ID'],
                'name'=>$row['Name'],
-               'passwort'=>$row['Password']
+               'passwort'=>$row['Password'],
+               'IsAdmin'=>$row['IsAdmin']
                );
                array_push($json,$bus);
             }
