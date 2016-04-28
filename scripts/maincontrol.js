@@ -18,17 +18,21 @@ app.controller('mainpagecontroller', function($scope,$window,$http)
 
             $scope.getKontostand=function(usrname)
             {
+                var test=0;
                    $.ajax({
                         type:'POST',
                         url:'getkontostand.php',
-                        datatype:'json',
+                        //datatype:'json',
                         data:{username:usrname},
-                        contenttype: 'json/html',
+                        //contenttype: 'json/html',
                         async:false,
                         success: function(data){
                             $scope.kontostand= JSON.parse(data);
+
                         }
                     });
+
+
 
             };
             //kek
