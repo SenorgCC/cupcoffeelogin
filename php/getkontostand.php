@@ -1,3 +1,4 @@
+header("Content-type: application/json; charset=utf-8");
 <?php
 
         //Hier Kommen die Verbindungsdaten für die Datenbank hin!
