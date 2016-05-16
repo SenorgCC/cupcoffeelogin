@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea1a2c4c-2835-41f7-86c9-9fd755c90696" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/loginFactory.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/userFactory.js" />
+    <list default="true" id="ea1a2c4c-2835-41f7-86c9-9fd755c90696" name="Default" comment="Factory Pattern Included">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/adminpage.html" afterPath="$PROJECT_DIR$/adminpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/loginmainpage.html" afterPath="$PROJECT_DIR$/loginmainpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mainpage.html" afterPath="$PROJECT_DIR$/mainpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/admincontrol.js" afterPath="$PROJECT_DIR$/scripts/admincontrol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/logincontrol.js" afterPath="$PROJECT_DIR$/scripts/logincontrol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/maincontrol.js" afterPath="$PROJECT_DIR$/scripts/maincontrol.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/useroptions.html" afterPath="$PROJECT_DIR$/useroptions.html" />
     </list>
     <ignored path="cupcoffeeloginUML.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +42,7 @@
           <file leaf-file-name="adminpage.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/adminpage.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
+                <state relative-caret-position="481">
                   <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
                   <folding />
                 </state>
@@ -122,15 +113,13 @@
           <file leaf-file-name="maincontrol.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/scripts/maincontrol.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+                <state relative-caret-position="1598">
+                  <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
                   <folding>
-                    <element signature="e#0#41#0" expanded="false" />
-                    <element signature="e#172#2218#0" expanded="false" />
-                    <element signature="e#881#1336#0" expanded="false" />
-                    <element signature="e#1376#1673#0" expanded="false" />
-                    <element signature="e#1918#2214#0" expanded="false" />
-                    <element signature="e#2601#3654#0" expanded="false" />
+                    <marker date="1463398400866" expanded="false" signature="0:41" placeholder="/** Created by alex on 26.11.2015. ...*/" />
+                    <marker date="1463398400866" expanded="true" signature="3626:3643" placeholder="{...}" />
+                    <marker date="1463398400866" expanded="false" signature="3626:3654" placeholder="{...}" />
+                    <marker date="1463398400866" expanded="true" signature="3626:3667" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -391,7 +380,7 @@
       <workItem from="1447666739808" duration="706000" />
       <workItem from="1447707797233" duration="2696000" />
       <workItem from="1447775262826" duration="65000" />
-      <workItem from="1463392120829" duration="5564000" />
+      <workItem from="1463392120829" duration="5797000" />
     </task>
     <task id="LOCAL-00001" summary="jquery and php combination for db communication">
       <created>1448536441734</created>
@@ -526,21 +515,28 @@
       <option name="project" value="LOCAL" />
       <updated>1448978961852</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Factory Pattern Included">
+      <created>1463398282801</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1463398282801</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9527000" />
+    <option name="totallyTimeSpent" value="9760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.086406745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31527627" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21645021" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31527627" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2156013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -587,7 +583,8 @@
     <MESSAGE value="registrierung repariert&#10;--&gt; passwortcheck integriert&#10;--&gt; DB Guthaben hinzugefügt&#10;------&gt;ID's werden autoincrementiert&#10;--&gt; Nutzer + Cash werden auf der Hauptseite angezeigt&#10;--&gt; Passwortänderung für User ist möglich" />
     <MESSAGE value="registrierung repariert&#10;--&gt; passwortcheck integriert&#10;--&gt; DB Guthaben hinzugefügt&#10;------&gt;ID's werden autoincrementiert&#10;--&gt; Nutzer + Cash werden auf der Hauptseite angezeigt&#10;--&gt; Passwortänderung für User ist möglich&#10;--&gt; Eigenartiger Pfusch wieder behoben" />
     <MESSAGE value="registrierung repariert&#10;--&gt; passwortcheck integriert&#10;--&gt; DB Guthaben hinzugefügt&#10;------&gt;ID's werden autoincrementiert&#10;--&gt; Nutzer + Cash werden auf der Hauptseite angezeigt&#10;--&gt; Passwortänderung für User ist möglich&#10;--&gt; Eigenartiger Pfusch wieder behoben&#10;-&gt;Wartschlangen implementierung inc" />
-    <option name="LAST_COMMIT_MESSAGE" value="registrierung repariert&#10;--&gt; passwortcheck integriert&#10;--&gt; DB Guthaben hinzugefügt&#10;------&gt;ID's werden autoincrementiert&#10;--&gt; Nutzer + Cash werden auf der Hauptseite angezeigt&#10;--&gt; Passwortänderung für User ist möglich&#10;--&gt; Eigenartiger Pfusch wieder behoben&#10;-&gt;Wartschlangen implementierung inc" />
+    <MESSAGE value="Factory Pattern Included" />
+    <option name="LAST_COMMIT_MESSAGE" value="Factory Pattern Included" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -944,15 +941,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/maincontrol.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+        <state relative-caret-position="1598">
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#172#2218#0" expanded="false" />
-            <element signature="e#881#1336#0" expanded="false" />
-            <element signature="e#1376#1673#0" expanded="false" />
-            <element signature="e#1918#2214#0" expanded="false" />
-            <element signature="e#2601#3654#0" expanded="false" />
+            <marker date="1463398400866" expanded="false" signature="0:41" placeholder="/** Created by alex on 26.11.2015. ...*/" />
+            <marker date="1463398400866" expanded="true" signature="3626:3643" placeholder="{...}" />
+            <marker date="1463398400866" expanded="false" signature="3626:3654" placeholder="{...}" />
+            <marker date="1463398400866" expanded="true" signature="3626:3667" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -1027,7 +1022,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/adminpage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="481">
           <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
           <folding />
         </state>
