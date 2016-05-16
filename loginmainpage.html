@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="sources/bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <link href="signin.css" rel="stylesheet">
     <script language="javascript" type="text/javascript" src="scripts/logincontrol.js"></script>
+    <script language="JavaScript" type="text/javascript" src="scripts/loginFactory.js"></script>
+    <script language="JavaScript" type="text/javascript" src="scripts/userFactory.js"></script>
 </head>
-<body >
+<body>
 
 <div ng-init="init()" ng-controller="loginmaincontroller">
     <div ng-view="homepageview" class="container" ng-controller="authenticationctrl" ng-show='showloginflag'>
-      <!-- loginAlertWarning = Falscherlogin -->
+        <!-- loginAlertWarning = Falscherlogin -->
         <div id="loginAlertwarning" class="alert alert-danger " role="alert">
-           <button type="button" class="close" aria-label="Close" id="worngAlarmLoginBtn">x</button>
+            <button type="button" class="close" aria-label="Close" id="worngAlarmLoginBtn">x</button>
             <label id="loginAlertmsg">Falscher Login!</label>
         </div>
         <!-- loginAlertwelcome = Richtige Daten -->
@@ -28,26 +30,35 @@
             <label class="sr-only">Name</label>
             <input type="name" id="inputname" class="form-control" placeholder="Name" ng-model="username" autofocus>
             {{username}}
-            <label for="inputPassword" class="sr-only" >Password</label>
-            <input type="password" id="inputPassword" class="form-control" ng-model="userpassword" placeholder="Password">
-            <button id="submitbtn"class="btn btn-lg btn-primary btn-block" type="submit"  ng-click="submit(username,userpassword)" >Sign in</button>
-            <button id="registerbtn"class="btn btn-lg btn-primary btn-block" type="submit"  ng-click="showregister()" > Register</button>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" ng-model="userpassword"
+                   placeholder="Password">
+            <button id="submitbtn" class="btn btn-lg btn-primary btn-block" type="submit"
+                    ng-click="submit(username,userpassword)">Sign in
+            </button>
+            <button id="registerbtn" class="btn btn-lg btn-primary btn-block" type="submit" ng-click="showregister()">
+                Register
+            </button>
         </form>
     </div>
 
-    <div ng-view="homepageregisterview" class="container" ng-controller="registercontroller"  ng-show="showregflag">
+    <div ng-view="homepageregisterview" class="container" ng-controller="registercontroller" ng-show="showregflag">
         <form class="form-signin"><!--bla-->
 
             <div>
 
-                <div> Benutzernamen eintragen<input ng-model="userregname"type="text" class="form-control" aria-label="..."></div>
+                <div> Benutzernamen eintragen<input ng-model="userregname" type="text" class="form-control"
+                                                    aria-label="..."></div>
 
             </div>
 
             <div class="input-group">
-                <div> Passwort eintragen<input ng-model="userregpassword" type="password" class="form-control" aria-label="..."></div>
+                <div> Passwort eintragen<input ng-model="userregpassword" type="password" class="form-control"
+                                               aria-label="..."></div>
                 <div>Passwort wiederholen<input type="password" class="form-control" aria-label="..."></div>
-                <button class="btn btn-lg btn-success btn-block" type="submit" ng-click="register(userregname,userregpassword)">Registrieren</button>
+                <button class="btn btn-lg btn-success btn-block" type="submit"
+                        ng-click="register(userregname,userregpassword)">Registrieren
+                </button>
             </div>
         </form>
     </div>

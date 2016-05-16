@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="sources/bootstrap-3.3.5-dist/css/bootstrap.min.css">
     <script src="sources/angular.min.js"></script>
     <script src="scripts/maincontrol.js"></script>
+    <script language="JavaScript" type="text/javascript" src="scripts/loginFactory.js"></script>
+    <script language="JavaScript" type="text/javascript" src="scripts/userFactory.js"></script>
     <script src="sources/jquery-2.1.4.min.js"></script>
 </head>
 <body>
@@ -15,20 +17,24 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a ng-click="usercheck()" class="navbar-brand" id="backlink"  href="#">CoffeeCup</a>  <!--Prüfen-->
+                <a ng-click="usercheck()" class="navbar-brand" id="backlink" href="#">CoffeeCup</a>  <!--Prüfen-->
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!-- linker Teil der navbar realisierbar mit einer unordered list-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- linker Teil der navbar realisierbar mit einer unordered list-->
                 <ul class="nav navbar-nav navbar-right"><!-- rechter Teil der navbar-->
-                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Passwort ändern</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>Abmelden</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Passwort ändern</a>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>Abmelden</a>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -43,7 +49,6 @@
             <button type="button" class="close" aria-label="Close" id="successfullChangePasswordBtn">x</button>
             <label id="successfullChangePasswordWarning">Das Passwort wurde erfolgreich aktuallisiert!</label>
         </div>
-
 
 
         <form class="form-signin">
