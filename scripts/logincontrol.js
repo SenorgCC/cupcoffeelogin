@@ -40,22 +40,24 @@ var app = angular.module('Cupcoffeelogin', [])
 
                 //suchenachkorrekten eingaben
                 for (var i = 0; i <= Login.accounts.length - 1; i++) {
-                    if (Login.accounts[i].name == usrname) {
-                        if (Login.accounts[i].passwort == usrpassword) {
+                    if ((Login.accounts[i].name === usrname)&&(Login.accounts[i].passwort === usrpassword)&&(Login.accounts[i].IsAdmin === 1)) {
                             correctloginflag = true;
-                            if (Login.accounts[i].IsAdmin == 1) {
-                                Login.adminflag = true;
-                            }
-                            //keine weitere durchsuchung der schleife nötig, da einmalige nutzter
-                            break;
-                        }
+                            Login.adminflag = true;
+
+                    }
+                    if((Login.accounts[i].name === usrname)&&(Login.accounts[i].passwort === usrpassword)){
+                        correctloginflag=true;
+                    }
+                    if(correctloginflag){
+                        //keine weitere durchsuchung der schleife nötig, da einmalige nutzter
+                        break;
                     }
                 }
 
-                if (correctloginflag == true) {
+                if (correctloginflag === true) {
                     $('#loginAlertwelcome').fadeIn('slow', function () {
                         $(this).delay(800).fadeOut('slow');
-                        if (adminflag == true) {
+                        if (adminflag === true) {
                             window.sessionStorage.setItem("Username", usrname);
                             $window.location.href = ('adminpage.html');
                         }
@@ -87,10 +89,8 @@ app.controller('registercontroller', function ($scope, $http, $window) {
         $scope.register = function (usrname, usrpassword1, usrpassword2) {
             //öffnet ein neues fenster zum registrieren des nutzters
 
-            korrektpasswordflag = false;
 
-
-            if (usrpassword1 == usrpassword2) {
+            if (usrpassword1 === usrpassword2) {
 
                 $.ajax({
                     type: 'POST',

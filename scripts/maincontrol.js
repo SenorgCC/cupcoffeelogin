@@ -76,7 +76,7 @@ app.controller('mainpagecontroller', function ($scope, $window, $http, User) {
         User.name = window.sessionStorage.getItem("Username");
         $scope.username = User.name;
 
-        if ($scope.username != 'admin') {
+        if ($scope.username !== 'admin') {
             $window.location.href = ('mainpage.html');
         }
         else {
@@ -98,7 +98,7 @@ app.controller('changePasswordCtrl', function ($scope, $window) {
         $scope.changePassword = function (usrpassword1, usrpassword2) {
             usrname = window.sessionStorage.getItem("Username");
 
-            if (usrpassword1 == usrpassword2) {
+            if (usrpassword1 === usrpassword2) {
 
                 $.ajax({
                     type: 'POST',

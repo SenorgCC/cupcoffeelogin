@@ -4,7 +4,7 @@
 
 var app = angular.module('CupCoffeeAdminpage', []);
 
-app.controller('adminpagecontroller', function ($scope, $window, $http, User) {
+app.controller('adminpagecontroller', function ($scope, $window, $http,User) {
 
     $scope.inital = function () {
         User.name = window.sessionStorage.getItem("Username");
@@ -55,6 +55,5 @@ app.controller('adminviewcontroller', function ($scope) {
             $('#rechnungDruckenlbl').removeClass("active");
             $('#warteschlangenlbl').addClass("active");
         }
-
     }
 });

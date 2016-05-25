@@ -6,5 +6,5 @@ app.factory('User', function () {
     UserData.name = '';
     UserData.Kontostand = 0;
     UserData.actualqueue = 0;
-
+    return UserData;
 });

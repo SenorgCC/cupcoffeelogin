@@ -6,4 +6,6 @@ app.factory('Login',function(){
     Login.accounts=[];
     Login.adminflag=false;
 
+    return Login;
+
 });
